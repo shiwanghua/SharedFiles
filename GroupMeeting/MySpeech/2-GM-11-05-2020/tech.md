@@ -160,7 +160,7 @@ streaming application **parallelization** problem with fine-grained task **divis
 
 ### 6. WORKLOAD PARALLELIZATION IN HETEROGENEOUS CLUSTER
 
-![1](D:\我的文件啊\研究生\paper\组会\我讲\2-组会-11-02-2020\images\1.png)
+![1](./images/1.png)
 
 ##### Design Overview（和第5节差不多）
 
