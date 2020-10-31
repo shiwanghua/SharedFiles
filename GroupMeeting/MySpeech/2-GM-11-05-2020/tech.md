@@ -46,7 +46,7 @@ streaming application **parallelization** problem with fine-grained task **divis
 
 * 迁移学习 transfer learning technology
 
-  * 作用：重建(rebuild)任务调度模型，提高泛化能力，
+  * 作用：重建(rebuild)任务调度模型，提高泛化能力
   * parameter-transfer method for <u>cluster level</u>: 当异构cluster发生改变时基于之前构造的模型快速生成一个高效调度网络
   * for node-level: 将现有的NCF模型参数应用在新加入的工作节点上
 
