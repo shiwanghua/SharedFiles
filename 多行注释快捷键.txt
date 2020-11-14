@@ -1,0 +1,62 @@
+多行注释快捷键：
+
+VS2017 和 VScode:
+	ctrl K C 
+	ctrl K U
+	或者：
+	ctrl K  ctrl C
+	ctrl K  ctrl U
+
+
+eclipse:
+	ctrl /  或者 ctrl shift C  或者 shift ctrl /  或者 alt shift J
+--来自https://blog.csdn.net/chengly0129/article/details/49248881
+
+
+jupyter notebook 和 pycharm :
+	crtl /
+
+
+IntelliJ IDEA:
+	ctrl / 或者 ctrl shift /
+
+
+Xcode:
+	command /
+
+matlab:
+	ctrl R
+	ctrl T
+
+RStudio:
+	ctrl shift C
+
+texstudio:
+	ctrl T
+	ctrl U
+
+winedt:	
+	选中-右键-Insert-Comment
+	或者 shift ctrl alt 方向键右键(先按住前三个不放）
+	     shift ctrl alt 方向键左键
+
+texworks:
+	ctrl shift ]
+	ctrl shift [
+
+
+代码排齐快捷键：
+VS：
+	ctrl+k+d
+	ctrl+k+f
+
+VScode:
+	shift+alt+D
+
+
+
+	
+
+
+
+
