@@ -1,0 +1,770 @@
+
+SNR = 0.0E+00dB
+BER =    NaN
+FER =    Inf
+blocks = 0
+blockerrors = 1
+biterrors = 0
+
+SNR = 0.0E+00dB
+BER = 1.275E-01
+FER = 2.000E+00
+blocks = 1
+blockerrors = 2
+biterrors = 51
+
+SNR = 0.0E+00dB
+BER = 1.187E-01
+FER = 1.500E+00
+blocks = 2
+blockerrors = 3
+biterrors = 95
+
+SNR = 0.0E+00dB
+BER = 1.300E-01
+FER = 1.333E+00
+blocks = 3
+blockerrors = 4
+biterrors = 156
+
+SNR = 0.0E+00dB
+BER = 1.256E-01
+FER = 1.250E+00
+blocks = 4
+blockerrors = 5
+biterrors = 201
+
+SNR = 0.0E+00dB
+BER = 1.275E-01
+FER = 1.200E+00
+blocks = 5
+blockerrors = 6
+biterrors = 255
+
+SNR = 0.0E+00dB
+BER = 1.279E-01
+FER = 1.167E+00
+blocks = 6
+blockerrors = 7
+biterrors = 307
+
+SNR = 0.0E+00dB
+BER = 1.232E-01
+FER = 1.143E+00
+blocks = 7
+blockerrors = 8
+biterrors = 345
+
+SNR = 0.0E+00dB
+BER = 1.244E-01
+FER = 1.125E+00
+blocks = 8
+blockerrors = 9
+biterrors = 398
+
+SNR = 0.0E+00dB
+BER = 1.236E-01
+FER = 1.111E+00
+blocks = 9
+blockerrors = 10
+biterrors = 445
+
+SNR = 0.0E+00dB
+BER = 1.228E-01
+FER = 1.100E+00
+blocks = 10
+blockerrors = 11
+biterrors = 491
+
+SNR = 0.0E+00dB
+BER = 1.252E-01
+FER = 1.091E+00
+blocks = 11
+blockerrors = 12
+biterrors = 551
+
+SNR = 0.0E+00dB
+BER = 1.267E-01
+FER = 1.083E+00
+blocks = 12
+blockerrors = 13
+biterrors = 608
+
+SNR = 0.0E+00dB
+BER = 1.242E-01
+FER = 1.077E+00
+blocks = 13
+blockerrors = 14
+biterrors = 646
+
+SNR = 0.0E+00dB
+BER = 1.241E-01
+FER = 1.071E+00
+blocks = 14
+blockerrors = 15
+biterrors = 695
+
+SNR = 0.0E+00dB
+BER = 1.220E-01
+FER = 1.067E+00
+blocks = 15
+blockerrors = 16
+biterrors = 732
+
+SNR = 0.0E+00dB
+BER = 1.223E-01
+FER = 1.063E+00
+blocks = 16
+blockerrors = 17
+biterrors = 783
+
+SNR = 0.0E+00dB
+BER = 1.219E-01
+FER = 1.059E+00
+blocks = 17
+blockerrors = 18
+biterrors = 829
+
+SNR = 0.0E+00dB
+BER = 1.238E-01
+FER = 1.056E+00
+blocks = 18
+blockerrors = 19
+biterrors = 891
+
+SNR = 0.0E+00dB
+BER = 1.232E-01
+FER = 1.053E+00
+blocks = 19
+blockerrors = 20
+biterrors = 936
+
+SNR = 0.0E+00dB
+BER = 1.214E-01
+FER = 1.050E+00
+blocks = 20
+blockerrors = 21
+biterrors = 971
+
+SNR = 0.0E+00dB
+BER = 1.173E-01
+FER = 1.048E+00
+blocks = 21
+blockerrors = 22
+biterrors = 985
+
+SNR = 0.0E+00dB
+BER = 1.175E-01
+FER = 1.045E+00
+blocks = 22
+blockerrors = 23
+biterrors = 1034
+
+SNR = 0.0E+00dB
+BER = 1.162E-01
+FER = 1.043E+00
+blocks = 23
+blockerrors = 24
+biterrors = 1069
+
+SNR = 0.0E+00dB
+BER = 1.178E-01
+FER = 1.042E+00
+blocks = 24
+blockerrors = 25
+biterrors = 1131
+
+SNR = 0.0E+00dB
+BER = 1.179E-01
+FER = 1.040E+00
+blocks = 25
+blockerrors = 26
+biterrors = 1179
+
+SNR = 0.0E+00dB
+BER = 1.164E-01
+FER = 1.038E+00
+blocks = 26
+blockerrors = 27
+biterrors = 1211
+
+SNR = 0.0E+00dB
+BER = 1.155E-01
+FER = 1.037E+00
+blocks = 27
+blockerrors = 28
+biterrors = 1247
+
+SNR = 0.0E+00dB
+BER = 1.156E-01
+FER = 1.036E+00
+blocks = 28
+blockerrors = 29
+biterrors = 1295
+
+SNR = 0.0E+00dB
+BER = 1.135E-01
+FER = 1.034E+00
+blocks = 29
+blockerrors = 30
+biterrors = 1317
+
+SNR = 1.0E+00dB
+BER =    NaN
+FER =    Inf
+blocks = 0
+blockerrors = 1
+biterrors = 0
+
+SNR = 1.0E+00dB
+BER = 9.500E-02
+FER = 2.000E+00
+blocks = 1
+blockerrors = 2
+biterrors = 38
+
+SNR = 1.0E+00dB
+BER = 1.150E-01
+FER = 1.500E+00
+blocks = 2
+blockerrors = 3
+biterrors = 92
+
+SNR = 1.0E+00dB
+BER = 9.583E-02
+FER = 1.333E+00
+blocks = 3
+blockerrors = 4
+biterrors = 115
+
+SNR = 1.0E+00dB
+BER = 9.625E-02
+FER = 1.250E+00
+blocks = 4
+blockerrors = 5
+biterrors = 154
+
+SNR = 1.0E+00dB
+BER = 9.800E-02
+FER = 1.200E+00
+blocks = 5
+blockerrors = 6
+biterrors = 196
+
+SNR = 1.0E+00dB
+BER = 9.625E-02
+FER = 1.167E+00
+blocks = 6
+blockerrors = 7
+biterrors = 231
+
+SNR = 1.0E+00dB
+BER = 1.000E-01
+FER = 1.143E+00
+blocks = 7
+blockerrors = 8
+biterrors = 280
+
+SNR = 1.0E+00dB
+BER = 1.003E-01
+FER = 1.125E+00
+blocks = 8
+blockerrors = 9
+biterrors = 321
+
+SNR = 1.0E+00dB
+BER = 1.042E-01
+FER = 1.111E+00
+blocks = 9
+blockerrors = 10
+biterrors = 375
+
+SNR = 1.0E+00dB
+BER = 1.053E-01
+FER = 1.100E+00
+blocks = 10
+blockerrors = 11
+biterrors = 421
+
+SNR = 1.0E+00dB
+BER = 1.073E-01
+FER = 1.091E+00
+blocks = 11
+blockerrors = 12
+biterrors = 472
+
+SNR = 1.0E+00dB
+BER = 1.088E-01
+FER = 1.083E+00
+blocks = 12
+blockerrors = 13
+biterrors = 522
+
+SNR = 1.0E+00dB
+BER = 9.317E-02
+FER = 9.333E-01
+blocks = 15
+blockerrors = 14
+biterrors = 559
+
+SNR = 1.0E+00dB
+BER = 9.156E-02
+FER = 9.375E-01
+blocks = 16
+blockerrors = 15
+biterrors = 586
+
+SNR = 1.0E+00dB
+BER = 9.059E-02
+FER = 9.412E-01
+blocks = 17
+blockerrors = 16
+biterrors = 616
+
+SNR = 1.0E+00dB
+BER = 9.069E-02
+FER = 9.444E-01
+blocks = 18
+blockerrors = 17
+biterrors = 653
+
+SNR = 1.0E+00dB
+BER = 9.237E-02
+FER = 9.474E-01
+blocks = 19
+blockerrors = 18
+biterrors = 702
+
+SNR = 1.0E+00dB
+BER = 9.175E-02
+FER = 9.500E-01
+blocks = 20
+blockerrors = 19
+biterrors = 734
+
+SNR = 1.0E+00dB
+BER = 8.952E-02
+FER = 9.524E-01
+blocks = 21
+blockerrors = 20
+biterrors = 752
+
+SNR = 1.0E+00dB
+BER = 9.011E-02
+FER = 9.545E-01
+blocks = 22
+blockerrors = 21
+biterrors = 793
+
+SNR = 1.0E+00dB
+BER = 9.000E-02
+FER = 9.565E-01
+blocks = 23
+blockerrors = 22
+biterrors = 828
+
+SNR = 1.0E+00dB
+BER = 8.802E-02
+FER = 9.583E-01
+blocks = 24
+blockerrors = 23
+biterrors = 845
+
+SNR = 1.0E+00dB
+BER = 8.520E-02
+FER = 9.600E-01
+blocks = 25
+blockerrors = 24
+biterrors = 852
+
+SNR = 1.0E+00dB
+BER = 8.365E-02
+FER = 9.615E-01
+blocks = 26
+blockerrors = 25
+biterrors = 870
+
+SNR = 1.0E+00dB
+BER = 7.955E-02
+FER = 9.286E-01
+blocks = 28
+blockerrors = 26
+biterrors = 891
+
+SNR = 1.0E+00dB
+BER = 7.180E-02
+FER = 8.438E-01
+blocks = 32
+blockerrors = 27
+biterrors = 919
+
+SNR = 1.0E+00dB
+BER = 7.303E-02
+FER = 8.485E-01
+blocks = 33
+blockerrors = 28
+biterrors = 964
+
+SNR = 1.0E+00dB
+BER = 7.412E-02
+FER = 8.529E-01
+blocks = 34
+blockerrors = 29
+biterrors = 1008
+
+SNR = 1.0E+00dB
+BER = 7.507E-02
+FER = 8.571E-01
+blocks = 35
+blockerrors = 30
+biterrors = 1051
+
+SNR = 2.0E+00dB
+BER = 0.000E+00
+FER = 7.143E-02
+blocks = 14
+blockerrors = 1
+biterrors = 0
+
+SNR = 2.0E+00dB
+BER = 4.643E-03
+FER = 9.524E-02
+blocks = 21
+blockerrors = 2
+biterrors = 39
+
+SNR = 2.0E+00dB
+BER = 7.841E-03
+FER = 1.364E-01
+blocks = 22
+blockerrors = 3
+biterrors = 69
+
+SNR = 2.0E+00dB
+BER = 1.083E-02
+FER = 1.667E-01
+blocks = 24
+blockerrors = 4
+biterrors = 104
+
+SNR = 2.0E+00dB
+BER = 1.034E-02
+FER = 1.724E-01
+blocks = 29
+blockerrors = 5
+biterrors = 120
+
+SNR = 2.0E+00dB
+BER = 1.051E-02
+FER = 1.765E-01
+blocks = 34
+blockerrors = 6
+biterrors = 143
+
+SNR = 2.0E+00dB
+BER = 1.236E-02
+FER = 1.944E-01
+blocks = 36
+blockerrors = 7
+biterrors = 178
+
+SNR = 2.0E+00dB
+BER = 1.213E-02
+FER = 2.000E-01
+blocks = 40
+blockerrors = 8
+biterrors = 194
+
+SNR = 2.0E+00dB
+BER = 1.000E-02
+FER = 1.607E-01
+blocks = 56
+blockerrors = 9
+biterrors = 224
+
+SNR = 2.0E+00dB
+BER = 1.057E-02
+FER = 1.639E-01
+blocks = 61
+blockerrors = 10
+biterrors = 258
+
+SNR = 2.0E+00dB
+BER = 1.149E-02
+FER = 1.774E-01
+blocks = 62
+blockerrors = 11
+biterrors = 285
+
+SNR = 2.0E+00dB
+BER = 1.031E-02
+FER = 1.644E-01
+blocks = 73
+blockerrors = 12
+biterrors = 301
+
+SNR = 2.0E+00dB
+BER = 1.133E-02
+FER = 1.688E-01
+blocks = 77
+blockerrors = 13
+biterrors = 349
+
+SNR = 2.0E+00dB
+BER = 1.125E-02
+FER = 1.628E-01
+blocks = 86
+blockerrors = 14
+biterrors = 387
+
+SNR = 2.0E+00dB
+BER = 1.000E-02
+FER = 1.429E-01
+blocks = 105
+blockerrors = 15
+biterrors = 420
+
+SNR = 2.0E+00dB
+BER = 9.597E-03
+FER = 1.356E-01
+blocks = 118
+blockerrors = 16
+biterrors = 453
+
+SNR = 2.0E+00dB
+BER = 1.004E-02
+FER = 1.382E-01
+blocks = 123
+blockerrors = 17
+biterrors = 494
+
+SNR = 2.0E+00dB
+BER = 1.043E-02
+FER = 1.406E-01
+blocks = 128
+blockerrors = 18
+biterrors = 534
+
+SNR = 2.0E+00dB
+BER = 9.640E-03
+FER = 1.367E-01
+blocks = 139
+blockerrors = 19
+biterrors = 536
+
+SNR = 2.0E+00dB
+BER = 9.864E-03
+FER = 1.361E-01
+blocks = 147
+blockerrors = 20
+biterrors = 580
+
+SNR = 2.0E+00dB
+BER = 9.506E-03
+FER = 1.338E-01
+blocks = 157
+blockerrors = 21
+biterrors = 597
+
+SNR = 2.0E+00dB
+BER = 9.603E-03
+FER = 1.294E-01
+blocks = 170
+blockerrors = 22
+biterrors = 653
+
+SNR = 2.0E+00dB
+BER = 9.327E-03
+FER = 1.264E-01
+blocks = 182
+blockerrors = 23
+biterrors = 679
+
+SNR = 2.0E+00dB
+BER = 9.334E-03
+FER = 1.304E-01
+blocks = 184
+blockerrors = 24
+biterrors = 687
+
+SNR = 2.0E+00dB
+BER = 9.247E-03
+FER = 1.344E-01
+blocks = 186
+blockerrors = 25
+biterrors = 688
+
+SNR = 2.0E+00dB
+BER = 9.227E-03
+FER = 1.340E-01
+blocks = 194
+blockerrors = 26
+biterrors = 716
+
+SNR = 2.0E+00dB
+BER = 9.410E-03
+FER = 1.357E-01
+blocks = 199
+blockerrors = 27
+biterrors = 749
+
+SNR = 2.0E+00dB
+BER = 9.577E-03
+FER = 1.393E-01
+blocks = 201
+blockerrors = 28
+biterrors = 770
+
+SNR = 2.0E+00dB
+BER = 9.890E-03
+FER = 1.415E-01
+blocks = 205
+blockerrors = 29
+biterrors = 811
+
+SNR = 2.0E+00dB
+BER = 1.005E-02
+FER = 1.435E-01
+blocks = 209
+blockerrors = 30
+biterrors = 840
+
+SNR = 3.0E+00dB
+BER = 0.000E+00
+FER = 3.236E-03
+blocks = 309
+blockerrors = 1
+biterrors = 0
+
+SNR = 3.0E+00dB
+BER = 4.193E-05
+FER = 4.193E-03
+blocks = 477
+blockerrors = 2
+biterrors = 8
+
+SNR = 3.0E+00dB
+BER = 5.217E-05
+FER = 4.815E-03
+blocks = 623
+blockerrors = 3
+biterrors = 13
+
+SNR = 3.0E+00dB
+BER = 1.181E-04
+FER = 5.109E-03
+blocks = 783
+blockerrors = 4
+biterrors = 37
+
+SNR = 3.0E+00dB
+BER = 1.843E-04
+FER = 5.760E-03
+blocks = 868
+blockerrors = 5
+biterrors = 64
+
+SNR = 3.0E+00dB
+BER = 1.537E-04
+FER = 5.195E-03
+blocks = 1155
+blockerrors = 6
+biterrors = 71
+
+SNR = 3.0E+00dB
+BER = 2.256E-04
+FER = 5.742E-03
+blocks = 1219
+blockerrors = 7
+biterrors = 110
+
+SNR = 3.0E+00dB
+BER = 2.854E-04
+FER = 5.930E-03
+blocks = 1349
+blockerrors = 8
+biterrors = 154
+
+SNR = 3.0E+00dB
+BER = 2.986E-04
+FER = 6.360E-03
+blocks = 1415
+blockerrors = 9
+biterrors = 169
+
+SNR = 3.0E+00dB
+BER = 2.278E-04
+FER = 5.008E-03
+blocks = 1997
+blockerrors = 10
+biterrors = 182
+
+SNR = 3.0E+00dB
+BER = 2.390E-04
+FER = 5.337E-03
+blocks = 2061
+blockerrors = 11
+biterrors = 197
+
+SNR = 3.0E+00dB
+BER = 2.437E-04
+FER = 5.623E-03
+blocks = 2134
+blockerrors = 12
+biterrors = 208
+
+SNR = 3.0E+00dB
+BER = 2.633E-04
+FER = 6.032E-03
+blocks = 2155
+blockerrors = 13
+biterrors = 227
+
+SNR = 3.0E+00dB
+BER = 2.467E-04
+FER = 5.780E-03
+blocks = 2422
+blockerrors = 14
+biterrors = 239
+
+SNR = 3.0E+00dB
+BER = 2.391E-04
+FER = 5.497E-03
+blocks = 2729
+blockerrors = 15
+biterrors = 261
+
+SNR = 3.0E+00dB
+BER = 2.457E-04
+FER = 5.442E-03
+blocks = 2940
+blockerrors = 16
+biterrors = 289
+
+SNR = 3.0E+00dB
+BER = 2.868E-04
+FER = 5.753E-03
+blocks = 2955
+blockerrors = 17
+biterrors = 339
+
+SNR = 3.0E+00dB
+BER = 2.801E-04
+FER = 5.931E-03
+blocks = 3035
+blockerrors = 18
+biterrors = 340
+
+SNR = 3.0E+00dB
+BER = 2.873E-04
+FER = 5.982E-03
+blocks = 3176
+blockerrors = 19
+biterrors = 365
+
+SNR = 3.0E+00dB
+BER = 2.915E-04
+FER = 6.270E-03
+blocks = 3190
+blockerrors = 20
+biterrors = 372
