@@ -1,2 +1,2 @@
 # SharedFiles
-Mainly some ppt, pdf files for easily management and shared.
+* Mainly some ppt, pdf, md files for easily managed and shared.
