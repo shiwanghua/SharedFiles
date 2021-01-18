@@ -3,13 +3,12 @@
 title: Swhua博客主页
 email: s-whua@sjtu.edu.cn
 description: >
-  Journal politique impartial, <br>
-  Par Mr. P. Marat auteur de l'Offrande a la patrie, <br>
-  du Moniteur et du Plan de Constitution, etc.
+  Don't count the days, <br>
+  make the days count.
 tagline: vitam impendere vero
 location: Versailles
 date: true
-baseurl: "/marat" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://shiwanghua.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author: shiwanghua
 # google_analytics: UA-101394056-1
