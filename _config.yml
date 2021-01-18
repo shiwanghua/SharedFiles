@@ -19,7 +19,8 @@ author: shiwanghua
 
 logo: /SwhuaBlog/assets/logo.png
 
-lang: zh
+language: zh-CN
+timezone: Asia/Shanghai
 
 # facebook:
 #  app_id: 101766790448070
