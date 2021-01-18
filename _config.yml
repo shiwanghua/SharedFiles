@@ -1,6 +1,6 @@
 # theme: jekyll-theme-hacker
 
-title: Swhua博客主页
+title: Title
 email: s-whua@sjtu.edu.cn
 description: >
   Don't count the days, <br>
@@ -19,7 +19,7 @@ author: shiwanghua
 
 logo: /SwhuaBlog/assets/logo.png
 
-language: zh-CN
+lang: zh-CN
 timezone: Asia/Shanghai
 
 # facebook:
