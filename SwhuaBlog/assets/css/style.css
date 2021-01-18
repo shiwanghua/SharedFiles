@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica|IM+Fell+English+SC');
+
+body{
+  height: 100%;
+  text-decoration-skip: ink;
+  color: #2f2f2f;
+  padding-top: 10px;
+  font-family: 'IM Fell DW Pica', serif;
+  background-color: #F2F7F9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-image: url("../img/bg.jpg");
+}
+
+body::selection{
+  background: #fff2a8;
+}
+
+p::selection{
+  background: lightgrey;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgba(47, 47, 47, 0.6)
+}
+
+#navlist > .active > a{
+    color: #000;
+    text-decoration: overline;
+}
+
+.author{
+  font-size: 1.3em;
+  padding-top: 20px;
+}
+
+.tagline{
+  padding-top: 20px;
+}
+
+.brand{
+  font-family: 'IM Fell English SC', serif;
+}
+
+.title{
+  font-size: 3.5em;
+}
+
+.line{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  -webkit-filter: opacity(.8);
+  filter: opacity(.8);
+}
+
+.space{
+  letter-spacing: 10px;
+}
+
+.flip{
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.tag{
+  width: 50%;
+  margin-right:0;
+}
+
+#title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+
+.justify {
+  text-align: justify;
+}
+
+hr.double {
+	border-top: 4px double #2f2f2f;
+}
+
+hr.simple {
+	border-top: 2px solid #2f2f2f;
+}
+
+.tag-hr{
+  width: 45%;
+  margin-right:0;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.italics{
+  font-style: italic;
+}
+
+.threecol::first-letter {
+  font-size: 2.5em;
+}
+
+.twocol::first-letter{
+  font-size: 2.5em;
+}
+
+.threecol{
+  -ms-word-break: keep-all;
+  word-break: keep-all;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 20px;
+}
+
+@media only screen
+and (min-device-width : 768px)  {
+  .threecol {
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+    width: 100%;
+  }
+  .tag{
+    width: 23%;
+    margin-right:0;
+  }
+}
