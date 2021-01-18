@@ -1,2 +1,2 @@
 # SharedFiles master branch
-* Mainly some files for easily management and share
+* This branch is mainly for record of grouping meeting, paper sharing and report.
