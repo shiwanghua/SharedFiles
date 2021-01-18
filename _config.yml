@@ -8,7 +8,7 @@ description: >
 tagline: vitam impendere vero
 location: Versailles
 date: true
-baseurl: "/shiwanghua.github.io/SwhuaBlog" # the subpath of your site, e.g. /blog
+baseurl: "/shiwanghua.github.io" # the subpath of your site, e.g. /blog
 url: "http://shiwanghua.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 author: shiwanghua
 # google_analytics: UA-101394056-1
@@ -17,7 +17,7 @@ author: shiwanghua
 # twitter:
 #   username: jdatap
 
-logo: /SwhuaBlog/assets/logo.png
+logo: /assets/logo.png
 
 lang: zh-CN
 timezone: Asia/Shanghai
