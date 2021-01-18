@@ -1,1 +1,48 @@
 theme: jekyll-theme-hacker
+
+title: Swhua博客主页
+email: s-whua@sjtu.edu.cn
+description: >
+  Journal politique impartial, <br>
+  Par Mr. P. Marat auteur de l'Offrande a la patrie, <br>
+  du Moniteur et du Plan de Constitution, etc.
+tagline: vitam impendere vero
+location: Versailles
+date: true
+baseurl: "/marat" # the subpath of your site, e.g. /blog
+url: "http://shiwanghua.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+author: shiwanghua
+# google_analytics: UA-101394056-1
+
+# SEO
+# twitter:
+#   username: jdatap
+
+logo: /SwhuaBlog/assets/logo.png
+
+lang: zh
+
+# facebook:
+#  app_id: 101766790448070
+
+social:
+  name: John Coene
+  links:
+    - https://twitter.com/jdatap
+    - https://www.linkedin.com/in/johncoene
+    - https://plus.google.com/109009224717674019651
+    - https://github.com/JohnCoene
+
+# Build settings
+exclude: README.md
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude:
+  - Gemfile
+  - Gemfile.lock
+plugins_dir:
+  - jekyll-roman
+  - jekyll-seo-tag
