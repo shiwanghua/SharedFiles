@@ -9,7 +9,7 @@ tagline: vitam impendere vero
 location: Versailles
 date: true
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://shiwanghua.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://shiwanghua.com" # the base hostname & protocol for your site, e.g. http://example.com
 author: shiwanghua
 # google_analytics: UA-101394056-1
 
