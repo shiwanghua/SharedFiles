@@ -1,0 +1,84 @@
+AlexNet
+
+batch_b8
+0  -- total_loss: 18431.095878988504   train_correct: 0.2809970378257368   test_correct: 0.4529041180086048
+1  -- total_loss: 7128.978363454342   train_correct: 0.7470685395252331   test_correct: 0.8127304855562385
+2  -- total_loss: 4288.823576806171   train_correct: 0.8552493277092974   test_correct: 0.8576751690227412
+3  -- total_loss: 3489.1158363208815   train_correct: 0.8845980588885703   test_correct: 0.8912876459741856
+4  -- total_loss: 3070.690446487166   train_correct: 0.8992724244782069   test_correct: 0.8996235402581438
+5  -- total_loss: 2759.82865304041   train_correct: 0.9100563768650095   test_correct: 0.9058082360172096
+6  -- total_loss: 2540.0624842167363   train_correct: 0.917727998689545   test_correct: 0.9131453595574678
+7  -- total_loss: 2377.3909655060634   train_correct: 0.924758043599929   test_correct: 0.9143746158574063
+8  -- total_loss: 2231.0333141082033   train_correct: 0.9294265394433296   test_correct: 0.9162569145666871
+9  -- total_loss: 2120.8530010912873   train_correct: 0.9329756883301255   test_correct: 0.9169099569760295
+
+batch_b16
+0  -- total_loss: 10240.68728351593   train_correct: 0.18896487707659337   test_correct: 0.24489090350338044
+1  -- total_loss: 6491.4062862843275   train_correct: 0.5116780648948224   test_correct: 0.7003303626306084
+2  -- total_loss: 3148.9444388635457   train_correct: 0.7799254678733772   test_correct: 0.7998617086662569
+3  -- total_loss: 2213.83351055393   train_correct: 0.8512360593526899   test_correct: 0.8467655193607867
+4  -- total_loss: 1817.5140756294131   train_correct: 0.8795063952932826   test_correct: 0.8771127842655193
+5  -- total_loss: 1595.9469658550806   train_correct: 0.8958734318904678   test_correct: 0.8939382298709281
+6  -- total_loss: 1442.1216396130621   train_correct: 0.9057154947650053   test_correct: 0.8926321450522434
+7  -- total_loss: 1337.0083152022562   train_correct: 0.9146839209904856   test_correct: 0.8995467117393977
+8  -- total_loss: 1255.1434276538203   train_correct: 0.9187108399197347   test_correct: 0.9107636754763369
+9  -- total_loss: 1170.4869753409876   train_correct: 0.9246897907367214   test_correct: 0.9133374308543332
+
+batch_b16 10000/1000
+0  -- total_loss: 1414.7265133857727   train_correct: 0.1852   test_correct: 0.185
+1  -- total_loss: 1398.1385753154755   train_correct: 0.1926   test_correct: 0.185
+2  -- total_loss: 1397.6646708250046   train_correct: 0.1926   test_correct: 0.185
+3  -- total_loss: 1396.5795632600784   train_correct: 0.1926   test_correct: 0.185
+4  -- total_loss: 1395.7355781793594   train_correct: 0.1926   test_correct: 0.185
+5  -- total_loss: 1394.6477699279785   train_correct: 0.1926   test_correct: 0.185
+6  -- total_loss: 1391.288916349411   train_correct: 0.1926   test_correct: 0.185
+7  -- total_loss: 1345.21673309803   train_correct: 0.2235   test_correct: 0.308
+8  -- total_loss: 1162.6255950927734   train_correct: 0.3423   test_correct: 0.24
+9  -- total_loss: 1039.426603794098   train_correct: 0.4169   test_correct: 0.314
+
+batch_b16 maxpool5 10000/1000
+0  -- total_loss: 1412.269386291504   train_correct: 0.191   test_correct: 0.186
+1  -- total_loss: 1397.731901884079   train_correct: 0.1926   test_correct: 0.185
+2  -- total_loss: 1396.8384282588959   train_correct: 0.1926   test_correct: 0.185
+3  -- total_loss: 1395.5390930175781   train_correct: 0.1926   test_correct: 0.185
+4  -- total_loss: 1391.6367118358612   train_correct: 0.1926   test_correct: 0.185
+5  -- total_loss: 1373.1436578035355   train_correct: 0.2014   test_correct: 0.249
+6  -- total_loss: 1266.2737041711807   train_correct: 0.2877   test_correct: 0.332
+7  -- total_loss: 1114.068892776966   train_correct: 0.3687   test_correct: 0.373
+8  -- total_loss: 1014.4764442443848   train_correct: 0.4304   test_correct: 0.442
+9  -- total_loss: 884.2913955450058   train_correct: 0.5127   test_correct: 0.502
+
+batch_b16 256
+0  -- total_loss: 10252.572620630264   train_correct: 0.18877376905961205   test_correct: 0.1958743085433313
+1  -- total_loss: 6673.545157238841   train_correct: 0.49308598495706896   test_correct: 0.6883066994468346
+2  -- total_loss: 3040.4811011739075   train_correct: 0.78676440476678   test_correct: 0.8198371235402582
+3  -- total_loss: 2132.5689507806674   train_correct: 0.8557407483243922   test_correct: 0.8542178856791641
+4  -- total_loss: 1738.594220364932   train_correct: 0.8857174058451752   test_correct: 0.8819913952059004
+5  -- total_loss: 1511.1322114870418   train_correct: 0.9023711044678324   test_correct: 0.8960894283958205
+6  -- total_loss: 1378.1918340132106   train_correct: 0.9123360224961438   test_correct: 0.9040795943454211
+7  -- total_loss: 1240.0525075263577   train_correct: 0.9202397040555851   test_correct: 0.907498463429625
+8  -- total_loss: 1151.7925700403284   train_correct: 0.9261094502914398   test_correct: 0.9149508297480025
+9  -- total_loss: 1086.715796061675   train_correct: 0.9324706171423891   test_correct: 0.9140288875230486
+
+batch_b16 pool5
+0  -- total_loss: 9744.72712123394   train_correct: 0.2341892242379568   test_correct: 0.3652427781192379
+1  -- total_loss: 4857.526623375714   train_correct: 0.6428737185524933   test_correct: 0.7423939766441303
+2  -- total_loss: 2524.9087030291557   train_correct: 0.826228210273421   test_correct: 0.8506837738168408
+3  -- total_loss: 1918.089805020485   train_correct: 0.8724763503828986   test_correct: 0.8761524277811924
+4  -- total_loss: 1621.2828800467541   train_correct: 0.893525533396126   test_correct: 0.8947449293177627
+5  -- total_loss: 1465.3496196368942   train_correct: 0.9040637754753812   test_correct: 0.8985095267363246
+6  -- total_loss: 1334.9909204251599   train_correct: 0.9126909373848233   test_correct: 0.9077673632452367
+7  -- total_loss: 1240.5774833695032   train_correct: 0.9201987523376606   test_correct: 0.8944760295021512
+8  -- total_loss: 1159.327928397106   train_correct: 0.9265735697612515   test_correct: 0.915181315304241
+9  -- total_loss: 1080.7301545580558   train_correct: 0.9312011138867275   test_correct: 0.9168715427166564
+
+svm sigmoid
+
+
+svm rbf
+
+
+svm poly
+
+
+svm linear
