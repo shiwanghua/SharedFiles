@@ -1,0 +1,258 @@
+AlexNet
+50000 10000
+
+batch_16 
+0  -- total_loss: 6209.857147455215   train_correct: 0.25468   test_correct: 0.3877
+1  -- total_loss: 4536.494871497154   train_correct: 0.46706   test_correct: 0.5438
+2  -- total_loss: 3675.2458287775517   train_correct: 0.5781   test_correct: 0.6159
+3  -- total_loss: 3019.0049074590206   train_correct: 0.66078   test_correct: 0.689
+4  -- total_loss: 2587.7841332107782   train_correct: 0.70996   test_correct: 0.7327
+5  -- total_loss: 2282.0658976510167   train_correct: 0.74712   test_correct: 0.765
+6  -- total_loss: 2058.292227383703   train_correct: 0.77264   test_correct: 0.7355
+7  -- total_loss: 1873.6941393762827   train_correct: 0.7924   test_correct: 0.7801
+8  -- total_loss: 1715.0184575300664   train_correct: 0.81   test_correct: 0.7906
+9  -- total_loss: 1575.5350326411426   train_correct: 0.82532   test_correct: 0.7996
+
+
+batch_16 最后一个MaxPool2d (3,2,0) 改成(5,2,1)
+0  -- total_loss: 6227.305147409439   train_correct: 0.24902   test_correct: 0.3554
+1  -- total_loss: 4550.904387176037   train_correct: 0.4648   test_correct: 0.5394
+2  -- total_loss: 3611.608718842268   train_correct: 0.58588   test_correct: 0.6316
+3  -- total_loss: 2930.6962847709656   train_correct: 0.6721   test_correct: 0.6975
+4  -- total_loss: 2488.10307431221   train_correct: 0.72432   test_correct: 0.7479
+5  -- total_loss: 2195.9762797132134   train_correct: 0.75738   test_correct: 0.7597
+6  -- total_loss: 1961.409943073988   train_correct: 0.78336   test_correct: 0.7742
+7  -- total_loss: 1776.6672793198377   train_correct: 0.80338   test_correct: 0.7875
+8  -- total_loss: 1628.7042473778129   train_correct: 0.82104   test_correct: 0.7925
+9  -- total_loss: 1505.1617297194898   train_correct: 0.83416   test_correct: 0.8112
+
+batch_b16 nn.Linear(256 * 6 * 6, 4096) 128改256
+0  -- total_loss: 6325.400384783745   train_correct: 0.23486   test_correct: 0.3822
+1  -- total_loss: 4710.956492602825   train_correct: 0.44876   test_correct: 0.5355
+2  -- total_loss: 3772.451835244894   train_correct: 0.56756   test_correct: 0.5995
+3  -- total_loss: 3088.8176735043526   train_correct: 0.65194   test_correct: 0.6838
+4  -- total_loss: 2640.215923398733   train_correct: 0.70492   test_correct: 0.7039
+5  -- total_loss: 2326.240812689066   train_correct: 0.74292   test_correct: 0.7429
+6  -- total_loss: 2072.4369677081704   train_correct: 0.77086   test_correct: 0.767
+7  -- total_loss: 1872.6983281895518   train_correct: 0.79366   test_correct: 0.7624
+8  -- total_loss: 1692.4845977202058   train_correct: 0.8128   test_correct: 0.788
+9  -- total_loss: 1565.6195911783725   train_correct: 0.82776   test_correct: 0.7864
+
+batch_b16 pool5 nn.Linear(256 * 6 * 6, 4096) 128改256
+0  -- total_loss: 6201.053846120834   train_correct: 0.25168   test_correct: 0.4001
+1  -- total_loss: 4566.834065973759   train_correct: 0.46162   test_correct: 0.5113
+2  -- total_loss: 3625.6791623830795   train_correct: 0.58682   test_correct: 0.658
+3  -- total_loss: 2909.7571312338114   train_correct: 0.6742   test_correct: 0.694
+4  -- total_loss: 2460.6157480850816   train_correct: 0.728   test_correct: 0.7424
+5  -- total_loss: 2146.897995144129   train_correct: 0.7632   test_correct: 0.7714
+6  -- total_loss: 1899.447697609663   train_correct: 0.79262   test_correct: 0.7777
+7  -- total_loss: 1725.82487051934   train_correct: 0.81208   test_correct: 0.8079
+8  -- total_loss: 1573.3205791004002   train_correct: 0.828   test_correct: 0.7725
+9  -- total_loss: 1439.2948429938406   train_correct: 0.8422   test_correct: 0.8188
+
+batch_b16 nn.Linear(1024, 10) 第二三次全连接4096-->1024   
+0  -- total_loss: 6374.997413635254   train_correct: 0.23334   test_correct: 0.3662
+1  -- total_loss: 4762.777956068516   train_correct: 0.43694   test_correct: 0.4844
+2  -- total_loss: 3903.912609398365   train_correct: 0.54422   test_correct: 0.6009
+3  -- total_loss: 3225.405218139291   train_correct: 0.63432   test_correct: 0.683
+4  -- total_loss: 2736.064021706581   train_correct: 0.69514   test_correct: 0.7097
+5  -- total_loss: 2420.023246243596   train_correct: 0.7308   test_correct: 0.7432
+6  -- total_loss: 2167.2996920645237   train_correct: 0.76042   test_correct: 0.7603
+7  -- total_loss: 1970.976070061326   train_correct: 0.7824   test_correct: 0.7661
+8  -- total_loss: 1807.8572501689196   train_correct: 0.80054   test_correct: 0.768
+9  -- total_loss: 1661.5327382311225   train_correct: 0.81652   test_correct: 0.7913
+
+
+batch_8: 
+0  -- total_loss: 11448.85530757904   train_correct: 0.31736   test_correct: 0.4285
+1  -- total_loss: 7804.301949642599   train_correct: 0.54814   test_correct: 0.6471
+2  -- total_loss: 6085.686918279156   train_correct: 0.6587   test_correct: 0.6902
+3  -- total_loss: 5142.525032248348   train_correct: 0.71496   test_correct: 0.7351
+4  -- total_loss: 4527.409550001845   train_correct: 0.74938   test_correct: 0.7586
+5  -- total_loss: 4080.147742720321   train_correct: 0.77492   test_correct: 0.7413
+6  -- total_loss: 3697.6708555775695   train_correct: 0.79856   test_correct: 0.7702
+7  -- total_loss: 3424.351921881549   train_correct: 0.8112   test_correct: 0.7872
+8  -- total_loss: 3130.4849058294203   train_correct: 0.83026   test_correct: 0.7842
+9  -- total_loss: 2924.457792480651   train_correct: 0.84108   test_correct: 0.8016
+
+batch_8 最后一个MaxPool2d (3,2,0) 改成(5,2,1)
+0  -- total_loss: 11350.840548455715   train_correct: 0.31734   test_correct: 0.4928
+1  -- total_loss: 7655.55161742866   train_correct: 0.56082   test_correct: 0.6316
+2  -- total_loss: 5905.991236768663   train_correct: 0.66924   test_correct: 0.6965
+3  -- total_loss: 4976.614058089443   train_correct: 0.72602   test_correct: 0.7283
+4  -- total_loss: 4369.600944539532   train_correct: 0.7602   test_correct: 0.7288
+5  -- total_loss: 3923.5152940747794   train_correct: 0.78614   test_correct: 0.7879
+6  -- total_loss: 3575.2980682053603   train_correct: 0.80328   test_correct: 0.7821
+7  -- total_loss: 3296.9300053541083   train_correct: 0.82198   test_correct: 0.7802
+8  -- total_loss: 3070.7961268477084   train_correct: 0.83388   test_correct: 0.7888
+9  -- total_loss: 2857.1930891068187   train_correct: 0.84338   test_correct: 0.7945
+
+batch_8 nn.MaxPool2d(5, 2, 1) + nn.Linear(256 * 6 * 6, 4096) 128改256
+0  -- total_loss: 11309.691768050194   train_correct: 0.3206   test_correct: 0.4748
+1  -- total_loss: 7526.789298176765   train_correct: 0.5677   test_correct: 0.6453
+2  -- total_loss: 5721.417305856943   train_correct: 0.68004   test_correct: 0.6889
+3  -- total_loss: 4807.872417410836   train_correct: 0.73596   test_correct: 0.7281
+4  -- total_loss: 4194.160082664341   train_correct: 0.76892   test_correct: 0.7525
+5  -- total_loss: 3737.787353759166   train_correct: 0.79556   test_correct: 0.7821
+6  -- total_loss: 3398.5782107838895   train_correct: 0.81396   test_correct: 0.7713
+7  -- total_loss: 3120.2855857379036   train_correct: 0.82852   test_correct: 0.8103
+8  -- total_loss: 2875.7269307776587   train_correct: 0.84294   test_correct: 0.8061
+9  -- total_loss: 2647.280363652244   train_correct: 0.85476   test_correct: 0.806
+
+batch_8 nn.Linear(256 * 6 * 6, 4096) 128改256
+0  -- total_loss: 11363.46410727501   train_correct: 0.32002   test_correct: 0.4702
+1  -- total_loss: 7684.791803881526   train_correct: 0.55824   test_correct: 0.6382
+2  -- total_loss: 5888.913268633187   train_correct: 0.66934   test_correct: 0.7068
+3  -- total_loss: 4942.869119379669   train_correct: 0.72744   test_correct: 0.7403
+4  -- total_loss: 4295.051943843253   train_correct: 0.76384   test_correct: 0.755
+5  -- total_loss: 3848.9975020531565   train_correct: 0.78744   test_correct: 0.7814
+6  -- total_loss: 3461.1691292058676   train_correct: 0.81054   test_correct: 0.7759
+7  -- total_loss: 3176.6489240266383   train_correct: 0.82594   test_correct: 0.7947
+8  -- total_loss: 2932.06553614093   train_correct: 0.8391   test_correct: 0.7979
+9  -- total_loss: 2711.721796648111   train_correct: 0.85144   test_correct: 0.8074
+
+
+a CNN
+[1,  2000] loss: 2.207
+[1,  4000] loss: 1.863
+[1,  6000] loss: 1.699
+[1,  8000] loss: 1.581
+[1, 10000] loss: 1.518
+[1, 12000] loss: 1.471
+[2,  2000] loss: 1.404
+[2,  4000] loss: 1.362
+[2,  6000] loss: 1.347
+[2,  8000] loss: 1.318
+[2, 10000] loss: 1.290
+[2, 12000] loss: 1.286
+Accuracy of the network on the 10000 test images: 55 %
+Accuracy of plane : 62 %
+Accuracy of   car : 64 %
+Accuracy of  bird : 31 %
+Accuracy of   cat : 31 %
+Accuracy of  deer : 62 %
+Accuracy of   dog : 34 %
+Accuracy of  frog : 74 %
+Accuracy of horse : 59 %
+Accuracy of  ship : 78 %
+Accuracy of truck : 52 %
+
+LeNet
+train length: 50000
+test_length: 10000
+total_loss: 5408.265688896179   train_correct: 0.19304   test_correct: 0.4
+total_loss: 4108.480488836765   train_correct: 0.39832   test_correct: 0.45
+total_loss: 3610.8483676314354   train_correct: 0.47702   test_correct: 0.45
+total_loss: 3336.2765411138535   train_correct: 0.52248   test_correct: 0.8
+total_loss: 3110.7580596208572   train_correct: 0.55524   test_correct: 0.8
+
+ResNet
+process: 1   loss: 9404.35667514801 correct: 58.62 %
+process: 2   loss: 6468.165209770203 correct: 68.34 %
+process: 3   loss: 5122.325662255287 correct: 70.73 %
+process: 4   loss: 4201.016624536365 correct: 73.68 %
+process: 5   loss: 3505.744087039493 correct: 74.87 %
+process: 6   loss: 2880.0364765180275 correct: 76.11 %
+process: 7   loss: 2343.68697327259 correct: 76.47 %
+process: 8   loss: 1905.8940072358819 correct: 77.77 %
+process: 9   loss: 1525.342818558216 correct: 76.72 %
+process: 10   loss: 1247.789335150621 correct: 78.3 %
+
+ZFNet batch_16
+process: 1  loss: 6069.534243106842  train_correct: 0.28162  test_correct: 0.4332
+process: 2  loss: 4375.955332517624  train_correct: 0.49104  test_correct: 0.5656
+process: 3  loss: 3441.1543547809124  train_correct: 0.60958  test_correct: 0.6704
+process: 4  loss: 2735.823315307498  train_correct: 0.69508  test_correct: 0.7079
+process: 5  loss: 2206.528157033026  train_correct: 0.75262  test_correct: 0.7413
+process: 6  loss: 1805.0401229187846  train_correct: 0.79926  test_correct: 0.7746
+process: 7  loss: 1470.7499868534505  train_correct: 0.83758  test_correct: 0.7774
+process: 8  loss: 1145.3873305227607  train_correct: 0.87248  test_correct: 0.7904
+process: 9  loss: 886.6987611539662  train_correct: 0.90106  test_correct: 0.7915
+process: 10  loss: 667.5505761923268  train_correct: 0.9264  test_correct: 0.7855
+
+batch_16 第二三次全连接4096-->1024   
+process: 1  loss: 6127.576797962189  train_correct: 0.2753  test_correct: 0.4215
+process: 2  loss: 4484.022160351276  train_correct: 0.47944  test_correct: 0.5476
+process: 3  loss: 3596.561480462551  train_correct: 0.59232  test_correct: 0.6368
+process: 4  loss: 2888.384588763118  train_correct: 0.6774  test_correct: 0.7046
+process: 5  loss: 2354.242650985718  train_correct: 0.73848  test_correct: 0.7467
+process: 6  loss: 1937.3591415584087  train_correct: 0.78496  test_correct: 0.7553
+process: 7  loss: 1577.318775422871  train_correct: 0.82652  test_correct: 0.7652
+process: 8  loss: 1262.988595817238  train_correct: 0.86072  test_correct: 0.7839
+process: 9  loss: 984.2953624818474  train_correct: 0.89052  test_correct: 0.7946
+process: 10  loss: 758.1143281371333  train_correct: 0.91536  test_correct: 0.7958
+
+batch_16 最后一个MaxPool2d (3,2,0) 改成(5,2,1)
+process: 1  loss: 6046.672893285751  train_correct: 0.27722  test_correct: 0.4489
+process: 2  loss: 4308.06190007925  train_correct: 0.49976  test_correct: 0.5808
+process: 3  loss: 3264.7705777287483  train_correct: 0.63258  test_correct: 0.6893
+process: 4  loss: 2529.952337488532  train_correct: 0.7194  test_correct: 0.7336
+process: 5  loss: 2057.822385944426  train_correct: 0.77244  test_correct: 0.7561
+process: 6  loss: 1679.9903898201883  train_correct: 0.81462  test_correct: 0.7655
+process: 7  loss: 1385.8948253579438  train_correct: 0.84676  test_correct: 0.7984
+process: 8  loss: 1125.7155217994004  train_correct: 0.87642  test_correct: 0.8055
+process: 9  loss: 912.2589148113038  train_correct: 0.89758  test_correct: 0.7988
+process: 10  loss: 715.6080719472375  train_correct: 0.91968  test_correct: 0.8078
+
+batch_b16 No Dropout
+process: 1  loss: 5907.924851953983  train_correct: 0.30596  test_correct: 0.4326
+process: 2  loss: 4188.115019917488  train_correct: 0.52166  test_correct: 0.594
+process: 3  loss: 3268.60070797801  train_correct: 0.63414  test_correct: 0.6678
+process: 4  loss: 2521.3737082481384  train_correct: 0.72  test_correct: 0.7049
+process: 5  loss: 1897.449334524572  train_correct: 0.78822  test_correct: 0.7479
+process: 6  loss: 1343.7509040758014  train_correct: 0.85078  test_correct: 0.7502
+process: 7  loss: 845.6780586894602  train_correct: 0.90596  test_correct: 0.7656
+process: 8  loss: 498.6074670692906  train_correct: 0.94524  test_correct: 0.7672
+process: 9  loss: 330.9430877356499  train_correct: 0.9638  test_correct: 0.768
+process: 10  loss: 237.44581107741396  train_correct: 0.97498  test_correct: 0.7737
+
+batch_8
+process: 1  loss: 11108.830791056156  train_correct: 0.34128  test_correct: 0.4956
+process: 2  loss: 7295.029269263148  train_correct: 0.58472  test_correct: 0.6586
+process: 3  loss: 5254.893605418503  train_correct: 0.70794  test_correct: 0.7284
+process: 4  loss: 4072.7807845245115  train_correct: 0.7747  test_correct: 0.769
+process: 5  loss: 3218.4390284852125  train_correct: 0.82202  test_correct: 0.7888
+process: 6  loss: 2567.0245353886276  train_correct: 0.85904  test_correct: 0.7985
+process: 7  loss: 1981.5279633251776  train_correct: 0.88978  test_correct: 0.7998
+process: 8  loss: 1528.0459181589322  train_correct: 0.91618  test_correct: 0.8035
+process: 9  loss: 1240.0177344924032  train_correct: 0.9322  test_correct: 0.781
+process: 10  loss: 1037.096226497588  train_correct: 0.94536  test_correct: 0.8023
+
+
+batch_8 nn.MaxPool2d(5, 2, 1)
+process: 1  loss: 10890.628061383963  train_correct: 0.35188  test_correct: 0.4809
+process: 2  loss: 7001.993819311261  train_correct: 0.60246  test_correct: 0.6801
+process: 3  loss: 5015.788801629096  train_correct: 0.72276  test_correct: 0.6987
+process: 4  loss: 3941.5913655334152  train_correct: 0.78304  test_correct: 0.7817
+process: 5  loss: 3197.3338094120845  train_correct: 0.82586  test_correct: 0.792
+process: 6  loss: 2601.8661898892024  train_correct: 0.85836  test_correct: 0.7715
+process: 7  loss: 2168.0953329688055  train_correct: 0.88206  test_correct: 0.8122
+process: 8  loss: 1808.8634040251054  train_correct: 0.90022  test_correct: 0.8109
+process: 9  loss: 1497.9054497753277  train_correct: 0.91866  test_correct: 0.7917
+process: 10  loss: 1289.3182653737044  train_correct: 0.92924  test_correct: 0.7993
+
+batch_b8_in_out_channel  5000/1000 samples
+process: 1  loss: 1438.07954621315  train_correct: 0.1116  test_correct: 0.1425
+process: 2  loss: 1349.206808924675  train_correct: 0.1984  test_correct: 0.2365
+process: 3  loss: 1255.4079786539078  train_correct: 0.2634  test_correct: 0.2837
+process: 4  loss: 1173.43590092659  train_correct: 0.3076  test_correct: 0.3451
+process: 5  loss: 1097.3481514453888  train_correct: 0.3554  test_correct: 0.3887
+process: 6  loss: 1032.7967609763145  train_correct: 0.3814  test_correct: 0.3684
+process: 7  loss: 985.5014916658401  train_correct: 0.4184  test_correct: 0.4528
+process: 8  loss: 951.2985258102417  train_correct: 0.4384  test_correct: 0.412
+process: 9  loss: 907.3007050156593  train_correct: 0.469  test_correct: 0.4783
+process: 10  loss: 885.5777584314346  train_correct: 0.4832  test_correct: 0.4713
+
+batch_b8 No Dropout
+process: 1  loss: 10519.212508291006  train_correct: 0.38606  test_correct: 0.4572
+process: 2  loss: 6953.129955038428  train_correct: 0.60856  test_correct: 0.6451
+process: 3  loss: 4936.48109931685  train_correct: 0.72622  test_correct: 0.7503
+process: 4  loss: 3577.091615000041  train_correct: 0.7992  test_correct: 0.7628
+process: 5  loss: 2435.4258323317626  train_correct: 0.86388  test_correct: 0.7875
+process: 6  loss: 1546.7842408716097  train_correct: 0.91416  test_correct: 0.7901
+process: 7  loss: 988.3040049294041  train_correct: 0.94568  test_correct: 0.7815
+process: 8  loss: 736.4334671326492  train_correct: 0.961  test_correct: 0.7765
+process: 9  loss: 529.3912518729238  train_correct: 0.9719  test_correct: 0.7777
+process: 10  loss: 425.86592598110303  train_correct: 0.9779  test_correct: 0.8061
+
+batch_8 第二三次全连接4096-->1024   
