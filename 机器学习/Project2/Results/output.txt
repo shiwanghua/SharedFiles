@@ -256,3 +256,13 @@ process: 9  loss: 529.3912518729238  train_correct: 0.9719  test_correct: 0.7777
 process: 10  loss: 425.86592598110303  train_correct: 0.9779  test_correct: 0.8061
 
 batch_8 第二三次全连接4096-->1024   
+process: 1  loss: 11282.259308338165  train_correct: 0.32994  test_correct: 0.4822
+process: 2  loss: 7662.875995948911  train_correct: 0.56234  test_correct: 0.6491
+process: 3  loss: 5660.524075217545  train_correct: 0.68544  test_correct: 0.7021
+process: 4  loss: 4409.282622339204  train_correct: 0.75932  test_correct: 0.765
+process: 5  loss: 3525.9379968512803  train_correct: 0.80768  test_correct: 0.777
+process: 6  loss: 2802.8096003623214  train_correct: 0.84546  test_correct: 0.7949
+process: 7  loss: 2211.1657264006208  train_correct: 0.87928  test_correct: 0.8022
+process: 8  loss: 1722.9598523077802  train_correct: 0.90534  test_correct: 0.7963
+process: 9  loss: 1387.827653032895  train_correct: 0.92382  test_correct: 0.7952
+process: 10  loss: 1114.4108635121047  train_correct: 0.93908  test_correct: 0.7869
