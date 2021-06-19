@@ -111,6 +111,18 @@ batch_8 nn.Linear(256 * 6 * 6, 4096) 128改256
 8  -- total_loss: 2932.06553614093   train_correct: 0.8391   test_correct: 0.7979
 9  -- total_loss: 2711.721796648111   train_correct: 0.85144   test_correct: 0.8074
 
+batch_8  第二三次全连接4096-->1024 
+0  -- total_loss: 11542.349607408047   train_correct: 0.30944   test_correct: 0.463
+1  -- total_loss: 8017.647264137864   train_correct: 0.53444   test_correct: 0.6007
+2  -- total_loss: 6190.214715376496   train_correct: 0.65486   test_correct: 0.6534
+3  -- total_loss: 5207.32919135876   train_correct: 0.71122   test_correct: 0.7382
+4  -- total_loss: 4555.457022510469   train_correct: 0.74754   test_correct: 0.7516
+5  -- total_loss: 4097.757238531485   train_correct: 0.77634   test_correct: 0.7677
+6  -- total_loss: 3701.414069391787   train_correct: 0.7975   test_correct: 0.7848
+7  -- total_loss: 3415.199793613516   train_correct: 0.81306   test_correct: 0.7619
+8  -- total_loss: 3172.93198425998   train_correct: 0.82736   test_correct: 0.7878
+9  -- total_loss: 2899.5450349266175   train_correct: 0.84128   test_correct: 0.7985
+
 
 a CNN
 [1,  2000] loss: 2.207
