@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="932f7234344a4a68bcfb730175b24f94" class="chart-container" style="width:900px; height:500px;"></div>
+    <div id="11a6c5cfe6d949718517d8294b24e121" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_932f7234344a4a68bcfb730175b24f94 = echarts.init(
-            document.getElementById('932f7234344a4a68bcfb730175b24f94'), 'roma', {renderer: 'canvas'});
-        var option_932f7234344a4a68bcfb730175b24f94 = {
+        var chart_11a6c5cfe6d949718517d8294b24e121 = echarts.init(
+            document.getElementById('11a6c5cfe6d949718517d8294b24e121'), 'roma', {renderer: 'canvas'});
+        var option_11a6c5cfe6d949718517d8294b24e121 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -24,7 +24,7 @@
     "series": [
         {
             "type": "line",
-            "name": "AlexNet\u8bad\u7ec3\u96c6\u51c6\u786e\u7387",
+            "name": "Loss(batch=8)",
             "connectNulls": true,
             "symbolSize": 3,
             "showSymbol": true,
@@ -34,47 +34,43 @@
             "data": [
                 [
                     0,
-                    0
+                    11282
                 ],
                 [
                     1,
-                    0.3206
+                    7662
                 ],
                 [
                     2,
-                    0.5677
+                    5660
                 ],
                 [
                     3,
-                    0.68004
+                    4409
                 ],
                 [
                     4,
-                    0.73596
+                    3525
                 ],
                 [
                     5,
-                    0.76892
+                    2802
                 ],
                 [
                     6,
-                    0.79556
+                    2211
                 ],
                 [
                     7,
-                    0.81396
+                    1722
                 ],
                 [
                     8,
-                    0.82852
+                    1387
                 ],
                 [
                     9,
-                    0.84294
-                ],
-                [
-                    10,
-                    0.85476
+                    1114
                 ]
             ],
             "hoverAnimation": true,
@@ -101,7 +97,7 @@
         },
         {
             "type": "line",
-            "name": "AlexNet\u6d4b\u8bd5\u96c6\u51c6\u786e\u7387",
+            "name": "Loss(batch=16)",
             "connectNulls": false,
             "symbolSize": 4,
             "showSymbol": true,
@@ -111,53 +107,49 @@
             "data": [
                 [
                     0,
-                    0
+                    6069
                 ],
                 [
                     1,
-                    0.4748
+                    4375
                 ],
                 [
                     2,
-                    0.6453
+                    3440
                 ],
                 [
                     3,
-                    0.6889
+                    2735
                 ],
                 [
                     4,
-                    0.7281
+                    2206
                 ],
                 [
                     5,
-                    0.7525
+                    1805
                 ],
                 [
                     6,
-                    0.7821
+                    1470
                 ],
                 [
                     7,
-                    0.7713
+                    1145
                 ],
                 [
                     8,
-                    0.8103
+                    886
                 ],
                 [
                     9,
-                    0.8061
-                ],
-                [
-                    10,
-                    0.806
+                    667
                 ]
             ],
             "hoverAnimation": true,
             "label": {
                 "show": true,
-                "position": "bottom",
+                "position": "right",
                 "color": "#00BFFF",
                 "margin": 8,
                 "fontSize": 15.0
@@ -180,12 +172,12 @@
     "legend": [
         {
             "data": [
-                "AlexNet\u8bad\u7ec3\u96c6\u51c6\u786e\u7387",
-                "AlexNet\u6d4b\u8bd5\u96c6\u51c6\u786e\u7387"
+                "Loss(batch=8)",
+                "Loss(batch=16)"
             ],
             "selected": {
-                "AlexNet\u8bad\u7ec3\u96c6\u51c6\u786e\u7387": true,
-                "AlexNet\u6d4b\u8bd5\u96c6\u51c6\u786e\u7387": true
+                "Loss(batch=8)": true,
+                "Loss(batch=16)": true
             },
             "type": "scroll",
             "show": true,
@@ -256,8 +248,8 @@
             "offset": 0,
             "splitNumber": 5,
             "min": 0,
-            "max": 10,
-            "minInterval": 0,
+            "max": 9,
+            "minInterval": 1,
             "maxInterval": 1,
             "splitLine": {
                 "show": false,
@@ -287,11 +279,11 @@
     "yAxis": [
         {
             "type": "value",
-            "name": "\u51c6 \u786e \u7387",
+            "name": "Loss",
             "show": true,
             "scale": false,
             "nameLocation": "middle",
-            "nameGap": 27,
+            "nameGap": 40,
             "gridIndex": 0,
             "axisLine": {
                 "show": true,
@@ -312,10 +304,10 @@
             "inverse": false,
             "offset": 0,
             "splitNumber": 5,
-            "min": 0,
-            "max": 1,
-            "minInterval": 0.1,
-            "maxInterval": 0.2,
+            "min": 500,
+            "max": 11500,
+            "minInterval": 1000,
+            "maxInterval": 2000,
             "splitLine": {
                 "show": false,
                 "lineStyle": {
@@ -334,14 +326,14 @@
     ],
     "title": [
         {
-            "text": "AlexNet",
-            "subtext": "batch=8, pool=5,cn=256",
+            "text": "ZFNet Loss",
+            "subtext": "batch=8/16",
             "padding": 5,
             "itemGap": 10
         }
     ]
 };
-        chart_932f7234344a4a68bcfb730175b24f94.setOption(option_932f7234344a4a68bcfb730175b24f94);
+        chart_11a6c5cfe6d949718517d8294b24e121.setOption(option_11a6c5cfe6d949718517d8294b24e121);
     </script>
 </body>
 </html>
