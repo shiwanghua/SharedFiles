@@ -22,11 +22,11 @@ class AlexNet(nn.Module):
             nn.ReLU(),
             nn.Conv2d(384, 256, 3, 1, 1),  #3+12=15=13+1*2
             nn.ReLU(),
-            # nn.Conv2d(256, 128, 3, 1, 1),  #3+12=15=13+1*2
-            nn.Conv2d(256, 256, 3, 1, 1),  #3+12=15=13+1*2
+            nn.Conv2d(256, 128, 3, 1, 1),  #3+12=15=13+1*2
+            # nn.Conv2d(256, 256, 3, 1, 1),  #3+12=15=13+1*2
             nn.ReLU(),
-            # nn.MaxPool2d(3, 2),  # 3+2*5=13
-            nn.MaxPool2d(5, 2, 1),  # 5+2*5=13+1*2
+            nn.MaxPool2d(3, 2),  # 3+2*5=13
+            # nn.MaxPool2d(5, 2, 1),  # 5+2*5=13+1*2
         )
         # self.features = nn.Sequential(
         #     nn.Conv2d(3, 64, 11, 4, 2),  # 11+4*54<228=224+2*2
@@ -47,8 +47,8 @@ class AlexNet(nn.Module):
         # )
         self.classifier = nn.Sequential(
             nn.Dropout(),
-            # nn.Linear(128 * 6 * 6, 4096),
-            nn.Linear(256 * 6 * 6, 4096),
+            nn.Linear(128 * 6 * 6, 4096),
+            # nn.Linear(256 * 6 * 6, 4096),
             nn.ReLU(),
             nn.Dropout(),
             # nn.Linear(4096, 4096),  # 1024
@@ -60,8 +60,8 @@ class AlexNet(nn.Module):
 
     def forward(self, x):
         x = self.features(x)
-        x = self.classifier(x.view(-1, 256 * 6 * 6))
-        # x = self.classifier(x.view(-1, 128 * 6 * 6))
+        # x = self.classifier(x.view(-1, 256 * 6 * 6))
+        x = self.classifier(x.view(-1, 128 * 6 * 6))
         return x
 
 
@@ -82,10 +82,10 @@ test_data = dset.CIFAR10(root='cifar-10-batches-py',
                          transform=transform,
                          download=False)
 train_loader = torch.utils.data.DataLoader(train_data,
-                                           batch_size=16,
+                                           batch_size=8,
                                            shuffle=True)
 test_loader = torch.utils.data.DataLoader(test_data,
-                                          batch_size=16,
+                                          batch_size=8,
                                           shuffle=True)
 train_len = len(train_data)
 test_len = len(test_data)
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # model = model.cuda()
     optimzer = optim.SGD(model.parameters(), lr=0.01)
 
-    print("batch_b16 pool5 nn.Linear(256 * 6 * 6, 4096) 128改256")
+    print("batch_b8 nn.Linear(128 * 6 * 6, 1024)")
     for epoch in range(10):
         total_loss = 0
         train_correct = 0
