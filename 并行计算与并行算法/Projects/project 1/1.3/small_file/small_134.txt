@@ -1,0 +1,51 @@
+Reviewer 1:
+
+1. Novelty		Motivation is misplaced
+
+2. Figure 1 is also not very helpful, the only difference seems to be whether queries go to a single or multiple queues. 3. Why Heracles, Quasar and BubbleFlux did not work?
+
+4. Are you holding queries at admission control until this computation happens? Does this affect their latency? Do you need to do this for each individual query? How are you instrumenting the application, and how would you do it in the case of a public cloud where you only have access to the binary? Wouldn't the characteristics of the input data, apart from the size, also affect the runtime of a query?
+
+
+
+
+Reviewer 2:
+
+1. What is the difference from Baymax.
+
+2. Throughput results are not stable.
+
+
+Reviewer 3:
+
+1. No IO considered.
+
+2. Why it beats prior work?
+
+3. More explanation on why prior work did not work.
+
+
+
+Reviewer 4:
+1. Both Dirigent and Heracles use fine-grained resource management mechanisms.
+
+2. Can Archon be extended to work with microsecond-level QoS targets?
+
+3. How to handle different shards for the same service? Same query could have different latency depending on which shard it landed on.
+
+4. More description on ML model. 
+
+5. Binary search is not always optimal.
+
+6. Why Heracles beats Archon in some case?
+
+7. Provide more insight behind the heuristics used (favoring fewer cores over smaller cache allocations, padding growth with 1 core and 1 way of cache, assuming almost linear scaling of performance vs. (# cores, # ways of cache) and their limitations.8. How are sharded workloads (where each task of the same job has a different dataset to process) handled? Does each shard require a different performance model?
+
+
+
+Reviewer 5:
+1. Different from Heracles.
+
+2. More discussion on Heracles.
+
+3. Datacenters provision their hardware based on expected load (a range), query response times, and SLA (QoS deadlines). A key issue is changes in the load which Heracles handles by dynamic feedback. This central issue is completely missing in the paper. 

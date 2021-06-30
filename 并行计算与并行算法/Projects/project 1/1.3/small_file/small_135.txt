@@ -1,0 +1,39 @@
+Introduction:
+6. may position the work as fine-grain multi-resource management
+(done) 23. explain query (maybe a footnote)
+(done) 27. explain why the query is not stable (cite bing and baymax paper)
+
+Related Work:
+(done) 5. differs Heracles [ISCA'15], Ubik [ASPLOS'14] and Dirigent [ASPLOS '16] more clearly. Their multi-core aware, not multithread aware because they pin each application to one core.
+(done) 14. explain more about why Baymax is different
+(done) 29. explain GPU is not considered in this work
+
+Motivation:
+1. specific challenges caused by the multithreaded applications are not emphasized in Section 3.3, affecting novelty.
+11. explain we don't handle network/IO
+16. justify the cache usage figure is representing cache contention
+22. explain we don't handle HT
+
+Design:
+(done) 4. discuss the runtime monitoring overhead
+(done) 7. discuss the problem of unknown applications (applies to services)
+(done) 9. explain IPC is used by the runtime monitoring for detecting possible degradation by memory contention
+(done) 10. queries that touch multiple services and might need to be queued multiple times
+(done) 12. explain pre-run allocation doesn't consider contention, leaving it to runtime allocation
+(done) 21. What happens when multiple outstanding queries have different requirements?
+(done) 24. explain what happens when query per second is high
+25. the extra one on multiple jobs
+(done) 26. explain the ML is only used for LS services, not BE applications
+(done) 28. concurrent LS queries
+
+Evaluation:
+(done) 2. Implementing Heracles as comparsion
+(done) 3. add a ref for static-opt
+(done) 4. discuss the runtime monitoring effectiveness
+(done) 8. emphasis memory management by core allocation with a figure in evaluation
+13. explain how the datacenter is modelled
+(done) 15. justify 150ms target
+(done) 17. explain more about the BE throught 0 case. it means BE cannot safely co-run
+18. explain the queueing in evaluation
+(done) 19. explain figure 9, the baseline is a single BE, the remaining cores are assign to multiple BEs
+(done) 20. explain the baseline single BE uses all cores
