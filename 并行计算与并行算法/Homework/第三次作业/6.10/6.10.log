@@ -1,0 +1,24 @@
+size: 128.000000 MB
+p=2
+MPI_Bcast Time: 0.037178516 s
+Swhua_Bcast Time: 0.038368464 s
+size: 128.000000 MB
+p=4
+MPI_Bcast Time: 0.053780079 s
+Swhua_Bcast Time: 0.052803278 s
+size: 128.000000 MB
+p=8
+MPI_Bcast Time: 0.080937386 s
+Swhua_Bcast Time: 0.082047701 s
+size: 128.000000 MB
+p=16
+MPI_Bcast Time: 0.156100273 s
+Swhua_Bcast Time: 0.186660051 s
+size: 128.000000 MB
+p=32
+MPI_Bcast Time: 0.286540985 s
+Swhua_Bcast Time: 0.281308413 s
+size: 128.000000 MB
+p=64
+MPI_Bcast Time: 2.879576206 s
+Swhua_Bcast Time: 1.067912579 s

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/themes/essos.js"></script>
+
+</head>
+<body>
+    <div id="e9fc94582bb848e0b82d9eac79f98249" class="chart-container" style="width:900px; height:500px;"></div>
+    <script>
+        var chart_e9fc94582bb848e0b82d9eac79f98249 = echarts.init(
+            document.getElementById('e9fc94582bb848e0b82d9eac79f98249'), 'essos', {renderer: 'canvas'});
+        var option_e9fc94582bb848e0b82d9eac79f98249 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "series": [
+        {
+            "type": "bar",
+            "name": "MPI_Bcast",
+            "legendHoverLink": true,
+            "data": [
+                0.0018,
+                0.0002,
+                0.0071,
+                0.1406,
+                0.4974,
+                1.1164,
+                2.0163
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        },
+        {
+            "type": "bar",
+            "name": "Swh_Bcast",
+            "legendHoverLink": true,
+            "data": [
+                0.0003,
+                0.0005,
+                0.005,
+                0.1297,
+                0.8551,
+                1.7584,
+                3.1209
+            ],
+            "showBackground": false,
+            "barMinHeight": 0,
+            "barCategoryGap": "20%",
+            "barGap": "30%",
+            "large": false,
+            "largeThreshold": 400,
+            "seriesLayoutBy": "column",
+            "datasetIndex": 0,
+            "clip": true,
+            "zlevel": 0,
+            "z": 2,
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "MPI_Bcast",
+                "Swh_Bcast"
+            ],
+            "selected": {
+                "MPI_Bcast": true,
+                "Swh_Bcast": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "8B",
+                "1KB",
+                "1MB",
+                "64MB",
+                "256MB",
+                "512MB",
+                "1024MB"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "show": true,
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u8fd0\u884c\u65f6\u95f4\u6bd4\u8f83",
+            "subtext": "MPI_Bcast\u4e0eSwh_Bcast",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_e9fc94582bb848e0b82d9eac79f98249.setOption(option_e9fc94582bb848e0b82d9eac79f98249);
+    </script>
+</body>
+</html>
