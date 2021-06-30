@@ -1,0 +1,10 @@
+ThreadNum=1, n=10, RunningTime= 0.006042 s, pi≈ 2.800000, accuracy= 0.891268
+ThreadNum=1, n=100, RunningTime= 0.002090 s, pi≈ 2.880000, accuracy= 0.916732
+ThreadNum=1, n=1000, RunningTime= 0.001753 s, pi≈ 3.040000, accuracy= 0.967662
+ThreadNum=1, n=10000, RunningTime= 0.001272 s, pi≈ 3.139200, accuracy= 0.999238
+ThreadNum=1, n=100000, RunningTime= 0.001432 s, pi≈ 3.147160, accuracy= 0.998228
+ThreadNum=1, n=1000000, RunningTime= 0.006603 s, pi≈ 3.141340, accuracy= 0.999920
+ThreadNum=1, n=10000000, RunningTime= 0.010429 s, pi≈ 3.141879, accuracy= 0.999909
+ThreadNum=1, n=100000000, RunningTime= 0.241746 s, pi≈ 3.141556, accuracy= 0.999988
+ThreadNum=1, n=1000000000, RunningTime= 0.801804 s, pi≈ 3.141519, accuracy= 0.999977
+ThreadNum=1, n=10000000000, RunningTime= 23.875498 s, pi≈ 3.141516, accuracy= 0.999976
