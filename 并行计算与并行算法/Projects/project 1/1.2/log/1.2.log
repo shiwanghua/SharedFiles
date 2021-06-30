@@ -1,0 +1,350 @@
+size[0]=1, size[1]=1
+
+ab run Time: 9.000759 seconds
+
+ak run Time: 1.998843 seconds
+
+a_max_pooling run Time: 1.898037 seconds
+size[0]=2, size[1]=1
+
+ab run Time: 5.932482 seconds
+
+ak run Time: 1.943902 seconds
+
+a_max_pooling run Time: 1.795187 seconds
+size[0]=3, size[1]=1
+
+ab run Time: 4.910748 seconds
+
+ak run Time: 2.038796 seconds
+
+a_max_pooling run Time: 1.909227 seconds
+size[0]=2, size[1]=2
+
+ab run Time: 4.601966 seconds
+
+ak run Time: 1.949368 seconds
+
+a_max_pooling run Time: 1.745749 seconds
+size[0]=5, size[1]=1
+
+ab run Time: 4.091452 seconds
+
+ak run Time: 1.994378 seconds
+
+a_max_pooling run Time: 1.727517 seconds
+size[0]=3, size[1]=2
+
+ab run Time: 3.944729 seconds
+
+ak run Time: 1.919525 seconds
+
+a_max_pooling run Time: 1.722365 seconds
+size[0]=7, size[1]=1
+
+ab run Time: 3.912148 seconds
+
+ak run Time: 1.895447 seconds
+
+a_max_pooling run Time: 1.722751 seconds
+size[0]=4, size[1]=2
+
+ab run Time: 3.654290 seconds
+
+ak run Time: 1.924652 seconds
+
+a_max_pooling run Time: 1.707616 seconds
+size[0]=3, size[1]=3
+
+ab run Time: 3.663367 seconds
+
+ak run Time: 1.911895 seconds
+
+a_max_pooling run Time: 1.710252 seconds
+size[0]=5, size[1]=2
+
+ab run Time: 3.569728 seconds
+
+ak run Time: 1.925668 seconds
+
+a_max_pooling run Time: 1.736211 seconds
+size[0]=11, size[1]=1
+
+ab run Time: 3.948002 seconds
+
+ak run Time: 1.904811 seconds
+
+a_max_pooling run Time: 1.702199 seconds
+size[0]=4, size[1]=3
+
+ab run Time: 3.934581 seconds
+
+ak run Time: 1.900779 seconds
+
+a_max_pooling run Time: 1.789301 seconds
+size[0]=13, size[1]=1
+
+ab run Time: 3.786075 seconds
+
+ak run Time: 1.910158 seconds
+
+a_max_pooling run Time: 1.699073 seconds
+size[0]=7, size[1]=2
+
+ab run Time: 5.090348 seconds
+
+ak run Time: 1.933046 seconds
+
+a_max_pooling run Time: 1.736186 seconds
+size[0]=5, size[1]=3
+
+ab run Time: 4.225334 seconds
+
+ak run Time: 2.140844 seconds
+
+a_max_pooling run Time: 2.342473 seconds
+size[0]=4, size[1]=4
+
+ab run Time: 4.334744 seconds
+
+ak run Time: 2.013563 seconds
+
+a_max_pooling run Time: 1.699803 seconds
+size[0]=17, size[1]=1
+
+ab run Time: 4.606097 seconds
+
+ak run Time: 1.890795 seconds
+
+a_max_pooling run Time: 1.699238 seconds
+size[0]=6, size[1]=3
+
+ab run Time: 4.141348 seconds
+
+ak run Time: 2.964213 seconds
+
+a_max_pooling run Time: 2.736924 seconds
+size[0]=19, size[1]=1
+
+ab run Time: 3.737252 seconds
+
+ak run Time: 2.443266 seconds
+
+a_max_pooling run Time: 1.689313 seconds
+size[0]=5, size[1]=4
+
+ab run Time: 4.679470 seconds
+
+ak run Time: 2.146725 seconds
+
+a_max_pooling run Time: 2.087345 seconds
+size[0]=7, size[1]=3
+
+ab run Time: 3.889930 seconds
+
+ak run Time: 2.076303 seconds
+
+a_max_pooling run Time: 2.262105 seconds
+size[0]=11, size[1]=2
+
+ab run Time: 4.104754 seconds
+
+ak run Time: 2.605941 seconds
+
+a_max_pooling run Time: 1.700910 seconds
+size[0]=23, size[1]=1
+
+ab run Time: 4.433036 seconds
+
+ak run Time: 3.021067 seconds
+
+a_max_pooling run Time: 1.775180 seconds
+size[0]=6, size[1]=4
+
+ab run Time: 4.490777 seconds
+
+ak run Time: 3.017885 seconds
+
+a_max_pooling run Time: 2.736214 seconds
+size[0]=5, size[1]=5
+
+ab run Time: 4.966931 seconds
+
+ak run Time: 3.016413 seconds
+
+a_max_pooling run Time: 2.717336 seconds
+size[0]=13, size[1]=2
+
+ab run Time: 4.588537 seconds
+
+ak run Time: 2.756629 seconds
+
+a_max_pooling run Time: 2.735790 seconds
+size[0]=9, size[1]=3
+
+ab run Time: 5.032793 seconds
+
+ak run Time: 3.011540 seconds
+
+a_max_pooling run Time: 2.524431 seconds
+size[0]=7, size[1]=4
+
+ab run Time: 4.843276 seconds
+
+ak run Time: 3.014582 seconds
+
+a_max_pooling run Time: 2.735058 seconds
+size[0]=29, size[1]=1
+
+ab run Time: 5.204559 seconds
+
+ak run Time: 2.849251 seconds
+
+a_max_pooling run Time: 2.730569 seconds
+size[0]=6, size[1]=5
+
+ab run Time: 4.970372 seconds
+
+ak run Time: 3.024798 seconds
+
+a_max_pooling run Time: 2.734719 seconds
+size[0]=31, size[1]=1
+
+ab run Time: 4.778453 seconds
+
+ak run Time: 3.004350 seconds
+
+a_max_pooling run Time: 2.736415 seconds
+size[0]=8, size[1]=4
+
+ab run Time: 4.982217 seconds
+
+ak run Time: 3.032804 seconds
+
+a_max_pooling run Time: 2.838839 seconds
+size[0]=11, size[1]=3
+
+ab run Time: 4.981149 seconds
+
+ak run Time: 3.003338 seconds
+
+a_max_pooling run Time: 2.747575 seconds
+size[0]=17, size[1]=2
+
+ab run Time: 5.017772 seconds
+
+ak run Time: 3.017507 seconds
+
+a_max_pooling run Time: 2.736540 seconds
+size[0]=7, size[1]=5
+
+ab run Time: 5.126366 seconds
+
+ak run Time: 2.499540 seconds
+
+a_max_pooling run Time: 2.749486 seconds
+size[0]=6, size[1]=6
+
+ab run Time: 4.856114 seconds
+
+ak run Time: 3.090117 seconds
+
+a_max_pooling run Time: 2.763841 seconds
+size[0]=37, size[1]=1
+
+ab run Time: 5.157408 seconds
+
+ak run Time: 3.119276 seconds
+
+a_max_pooling run Time: 2.779069 seconds
+size[0]=19, size[1]=2
+
+ab run Time: 5.319618 seconds
+
+ak run Time: 3.105613 seconds
+
+a_max_pooling run Time: 2.939342 seconds
+size[0]=13, size[1]=3
+
+ab run Time: 5.741631 seconds
+
+ak run Time: 3.416172 seconds
+
+a_max_pooling run Time: 2.918219 seconds
+size[0]=8, size[1]=5
+
+ab run Time: 6.666758 seconds
+
+ak run Time: 3.189712 seconds
+
+a_max_pooling run Time: 3.143563 seconds
+size[0]=41, size[1]=1
+
+ab run Time: 6.616685 seconds
+
+ak run Time: 3.552736 seconds
+
+a_max_pooling run Time: 3.498486 seconds
+size[0]=7, size[1]=6
+
+ab run Time: 6.724979 seconds
+
+ak run Time: 3.245577 seconds
+
+a_max_pooling run Time: 3.703780 seconds
+size[0]=43, size[1]=1
+
+ab run Time: 7.127025 seconds
+
+ak run Time: 4.450602 seconds
+
+a_max_pooling run Time: 4.384863 seconds
+size[0]=11, size[1]=4
+
+ab run Time: 6.475096 seconds
+
+ak run Time: 4.545244 seconds
+
+a_max_pooling run Time: 4.372732 seconds
+size[0]=9, size[1]=5
+
+ab run Time: 6.597102 seconds
+
+ak run Time: 3.865519 seconds
+
+a_max_pooling run Time: 3.489424 seconds
+size[0]=23, size[1]=2
+
+ab run Time: 7.374995 seconds
+
+ak run Time: 3.878756 seconds
+
+a_max_pooling run Time: 3.409816 seconds
+size[0]=47, size[1]=1
+
+ab run Time: 6.726727 seconds
+
+ak run Time: 3.590761 seconds
+
+a_max_pooling run Time: 3.577092 seconds
+size[0]=8, size[1]=6
+
+ab run Time: 8.387699 seconds
+
+ak run Time: 4.897899 seconds
+
+a_max_pooling run Time: 3.687047 seconds
+size[0]=7, size[1]=7
+
+ab run Time: 6.915935 seconds
+
+ak run Time: 5.587979 seconds
+
+a_max_pooling run Time: 4.033839 seconds
+size[0]=10, size[1]=5
+
+ab run Time: 7.354290 seconds
+
+ak run Time: 4.970634 seconds
+
+a_max_pooling run Time: 4.505125 seconds
