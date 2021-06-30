@@ -1,0 +1,160 @@
+size: 256.000000 MB
+p=1
+MPI_Allgather Time: 0.196358204 s
+
+Swhua_Allgather Time: 0.126347303 s
+size: 256.000000 MB
+p=2
+MPI_Allgather Time: 0.272673845 s
+
+Swhua_Allgather Time: 0.179144621 s
+size: 255.999985 MB
+p=3
+MPI_Allgather Time: 0.412263393 s
+
+Swhua_Allgather Time: 0.244804144 s
+size: 256.000000 MB
+p=4
+MPI_Allgather Time: 0.313836575 s
+
+Swhua_Allgather Time: 0.233166695 s
+size: 255.999985 MB
+p=5
+MPI_Allgather Time: 0.404421806 s
+
+Swhua_Allgather Time: 0.303560019 s
+size: 255.999985 MB
+p=6
+MPI_Allgather Time: 0.410258055 s
+
+Swhua_Allgather Time: 0.279564142 s
+size: 255.999985 MB
+p=7
+MPI_Allgather Time: 0.405445576 s
+
+Swhua_Allgather Time: 0.319938421 s
+size: 256.000000 MB
+p=8
+MPI_Allgather Time: 0.346400023 s
+
+Swhua_Allgather Time: 0.293871164 s
+size: 255.999985 MB
+p=9
+MPI_Allgather Time: 0.433046103 s
+
+Swhua_Allgather Time: 0.363536119 s
+size: 255.999985 MB
+p=10
+MPI_Allgather Time: 0.444892883 s
+
+Swhua_Allgather Time: 0.333100796 s
+size: 255.999924 MB
+p=11
+MPI_Allgather Time: 0.507267475 s
+
+Swhua_Allgather Time: 0.442200661 s
+size: 255.999939 MB
+p=12
+MPI_Allgather Time: 0.511294842 s
+
+Swhua_Allgather Time: 0.397111416 s
+size: 255.999985 MB
+p=13
+MPI_Allgather Time: 0.522274494 s
+
+Swhua_Allgather Time: 0.454328537 s
+size: 255.999985 MB
+p=14
+MPI_Allgather Time: 0.521306276 s
+
+Swhua_Allgather Time: 0.410243750 s
+size: 255.999985 MB
+p=15
+MPI_Allgather Time: 0.568721056 s
+
+Swhua_Allgather Time: 0.457581997 s
+size: 256.000000 MB
+p=16
+MPI_Allgather Time: 0.556220293 s
+
+Swhua_Allgather Time: 0.458212376 s
+size: 255.999985 MB
+p=17
+MPI_Allgather Time: 0.557679176 s
+
+Swhua_Allgather Time: 0.516749144 s
+size: 255.999985 MB
+p=18
+MPI_Allgather Time: 0.562707901 s
+
+Swhua_Allgather Time: 0.480937958 s
+size: 255.999893 MB
+p=19
+MPI_Allgather Time: 0.578843355 s
+
+Swhua_Allgather Time: 0.518082619 s
+size: 255.999908 MB
+p=20
+MPI_Allgather Time: 0.581340551 s
+
+Swhua_Allgather Time: 0.521071672 s
+size: 255.999985 MB
+p=21
+MPI_Allgather Time: 0.571724415 s
+
+Swhua_Allgather Time: 0.555290461 s
+size: 255.999924 MB
+p=22
+MPI_Allgather Time: 0.591738224 s
+
+Swhua_Allgather Time: 0.513325930 s
+size: 255.999939 MB
+p=23
+MPI_Allgather Time: 0.558417797 s
+
+Swhua_Allgather Time: 0.575232983 s
+size: 255.999939 MB
+p=24
+MPI_Allgather Time: 0.572028399 s
+
+Swhua_Allgather Time: 0.563986301 s
+size: 255.999947 MB
+p=25
+MPI_Allgather Time: 0.572914124 s
+
+Swhua_Allgather Time: 0.671800852 s
+size: 255.999985 MB
+p=26
+MPI_Allgather Time: 0.592782736 s
+
+Swhua_Allgather Time: 0.593268633 s
+size: 255.999847 MB
+p=27
+MPI_Allgather Time: 0.589065790 s
+
+Swhua_Allgather Time: 0.672171354 s
+size: 255.999878 MB
+p=28
+MPI_Allgather Time: 0.596335411 s
+
+Swhua_Allgather Time: 0.678800583 s
+size: 255.999916 MB
+p=29
+MPI_Allgather Time: 0.581959724 s
+
+Swhua_Allgather Time: 0.746037006 s
+size: 255.999985 MB
+p=30
+MPI_Allgather Time: 0.602859735 s
+
+Swhua_Allgather Time: 0.782317877 s
+size: 255.999992 MB
+p=31
+MPI_Allgather Time: 0.620609760 s
+
+Swhua_Allgather Time: 0.716097355 s
+size: 256.000000 MB
+p=32
+MPI_Allgather Time: 0.631569386 s
+
+Swhua_Allgather Time: 0.724111319 s
