@@ -1,0 +1,37 @@
+﻿  OfflineJobScheduler.cpp
+D:\我的文件\算法助教\Project\AlgorithmDesignProject\cppFiles\OfflineJobScheduler.cpp(17,32): warning C4244: “参数”: 从“_Ty”转换到“const unsigned int”，可能丢失数据
+          with
+          [
+              _Ty=double
+          ]
+D:\我的文件\算法助教\Project\AlgorithmDesignProject\cppFiles\OfflineJobScheduler.cpp(24,32): warning C4244: “参数”: 从“_Ty”转换到“const unsigned int”，可能丢失数据
+          with
+          [
+              _Ty=double
+          ]
+D:\我的文件\算法助教\Project\AlgorithmDesignProject\cppFiles\OfflineJobScheduler.cpp(31,30): warning C4244: “参数”: 从“_Ty”转换到“const unsigned int”，可能丢失数据
+          with
+          [
+              _Ty=double
+          ]
+C:\Programs\Visual Studio 2022\Visual Studio IDE\VC\Tools\MSVC\14.30.30528\include\numeric(32,26): warning C4244: “=”: 从“double”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=int
+          ]
+C:\Programs\Visual Studio 2022\Visual Studio IDE\VC\Tools\MSVC\14.30.30528\include\numeric(43): message : 查看对正在编译的函数 模板 实例化“_Ty std::accumulate<_InIt,_Ty,std::plus<void>>(const _InIt,const _InIt,_Ty,_Fn)”的引用
+          with
+          [
+              _Ty=int,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,
+              _Fn=std::plus<void>
+          ]
+D:\我的文件\算法助教\Project\AlgorithmDesignProject\cppFiles\OfflineJobScheduler.cpp(55): message : 查看对正在编译的函数 模板 实例化“_Ty std::accumulate<std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>,int>(const _InIt,const _InIt,_Ty)”的引用
+          with
+          [
+              _Ty=int,
+              _InIt=std::_Vector_iterator<std::_Vector_val<std::_Simple_types<double>>>
+          ]
+  main.cpp
+  正在生成代码...
+  AlgorithmDesignProject.vcxproj -> D:\我的文件\算法助教\Project\AlgorithmDesignProject\Debug\AlgorithmDesignProject.exe
