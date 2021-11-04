@@ -34,11 +34,25 @@ OfflineJobScheduler::OfflineJobScheduler() {
 }
 
 void OfflineJobScheduler::schedule() {
-	for (int i = 0; i < numJob; i++) {
-		for (int j = 0; j < jobBlock[i]; j++) {
-			runLoc[i][j] = make_tuple(i, i, j);
-		}
-	}
+	// Task1 (2.1)
+	runLoc[0][0] = make_tuple(0,0,2);
+	runLoc[0][1] = make_tuple(1, 0, 1);
+	runLoc[0][2] = make_tuple(1, 0, 2);
+	runLoc[1][0] = make_tuple(0, 0, 1);
+	runLoc[1][1] = make_tuple(2, 0, 1);
+	runLoc[1][2] = make_tuple(2, 0, 2);
+	finishTime[0] = 3.625;
+	finishTime[1] = 1.75;
+
+	// Task2 (2.2)
+	runLoc[0][0] = make_tuple(1, 0, 1);
+	runLoc[0][1] = make_tuple(2, 0, 2);
+	runLoc[0][2] = make_tuple(1, 0, 1);
+	runLoc[1][0] = make_tuple(0, 0, 1);
+	runLoc[1][1] = make_tuple(2, 0, 1);
+	runLoc[1][2] = make_tuple(2, 0, 2);
+	finishTime[0] = 3.42;
+	finishTime[1] = 1.75;
 }
 
 void OfflineJobScheduler::outputSolution() {
@@ -52,5 +66,5 @@ void OfflineJobScheduler::outputSolution() {
 	}
 
 	cout << "The maximum finish time: " << *max_element(finishTime.begin(), finishTime.end()) << "\n";
-	cout << "The total response time: " << accumulate(finishTime.begin(), finishTime.end(), 0) << "\n";
+	cout << "The total response time: " << accumulate(finishTime.begin(), finishTime.end(), 0.0) << "\n";
 }

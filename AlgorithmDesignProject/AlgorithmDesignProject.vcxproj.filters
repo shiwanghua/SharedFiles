@@ -31,5 +31,13 @@
     <Text Include="..\input\case1.txt">
       <Filter>资源文件</Filter>
     </Text>
+    <Text Include="..\input\case2.txt">
+      <Filter>资源文件</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\.gitignore">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
