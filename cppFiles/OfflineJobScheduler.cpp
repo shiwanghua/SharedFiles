@@ -35,19 +35,19 @@ OfflineJobScheduler::OfflineJobScheduler() {
 
 void OfflineJobScheduler::schedule() {
 	// Task1 (2.1)
-	runLoc[0][0] = make_tuple(0,0,2);
+	/*runLoc[0][0] = make_tuple(0,0,2);
 	runLoc[0][1] = make_tuple(1, 0, 1);
 	runLoc[0][2] = make_tuple(1, 0, 2);
 	runLoc[1][0] = make_tuple(0, 0, 1);
 	runLoc[1][1] = make_tuple(2, 0, 1);
 	runLoc[1][2] = make_tuple(2, 0, 2);
 	finishTime[0] = 3.625;
-	finishTime[1] = 1.75;
+	finishTime[1] = 1.75;*/
 
 	// Task2 (2.2)
 	runLoc[0][0] = make_tuple(1, 0, 1);
 	runLoc[0][1] = make_tuple(2, 0, 2);
-	runLoc[0][2] = make_tuple(1, 0, 1);
+	runLoc[0][2] = make_tuple(0, 0, 2);
 	runLoc[1][0] = make_tuple(0, 0, 1);
 	runLoc[1][1] = make_tuple(2, 0, 1);
 	runLoc[1][2] = make_tuple(2, 0, 2);
@@ -56,7 +56,7 @@ void OfflineJobScheduler::schedule() {
 }
 
 void OfflineJobScheduler::outputSolution() {
-	cout << "Solution of Teaching Assistant:\n\n";
+	cout << "Task2 Solution of Teaching Assistant:\n\n";
 	for (int i = 0; i < numJob; i++) {
 		cout << "Job" << i << " finishes at time " << finishTime[i] << ": \n";
 		for (int j = 0; j < jobBlock[i]; j++) {
