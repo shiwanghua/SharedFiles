@@ -1,4 +1,4 @@
 #pragma once
-#include "OfflineJobScheduler.h"
+#include "ResourceScheduler.h"
 
-void generator(OfflineJobScheduler&);
+void generator(ResourceScheduler&,int);
