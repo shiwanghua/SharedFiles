@@ -1,17 +1,2 @@
-﻿  OfflineJobScheduler.cpp
-D:\我的文件啊\工作\研二2021下研究生算法课助教\Project\OfflineJobScheduler\cppFiles\OfflineJobScheduler.cpp(17,32): warning C4244: “参数”: 从“_Ty”转换到“const unsigned int”，可能丢失数据
-          with
-          [
-              _Ty=double
-          ]
-D:\我的文件啊\工作\研二2021下研究生算法课助教\Project\OfflineJobScheduler\cppFiles\OfflineJobScheduler.cpp(24,32): warning C4244: “参数”: 从“_Ty”转换到“const unsigned int”，可能丢失数据
-          with
-          [
-              _Ty=double
-          ]
-D:\我的文件啊\工作\研二2021下研究生算法课助教\Project\OfflineJobScheduler\cppFiles\OfflineJobScheduler.cpp(31,30): warning C4244: “参数”: 从“_Ty”转换到“const unsigned int”，可能丢失数据
-          with
-          [
-              _Ty=double
-          ]
-  AlgorithmDesignProject.vcxproj -> D:\我的文件啊\工作\研二2021下研究生算法课助教\Project\OfflineJobScheduler\Debug\AlgorithmDesignProject.exe
+﻿  Util.cpp
+  AlgorithmDesignProject.vcxproj -> D:\我的文件\算法助教\Project\AlgorithmDesignProject\Debug\AlgorithmDesignProject.exe

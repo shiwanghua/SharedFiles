@@ -21,17 +21,23 @@
     <ClCompile Include="..\cppFiles\OfflineJobScheduler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\cppFiles\Util.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\hFiles\OfflineJobScheduler.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\hFiles\Util.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\input\case1.txt">
+    <Text Include="..\input\task2_case1.txt">
       <Filter>资源文件</Filter>
     </Text>
-    <Text Include="..\input\case2.txt">
+    <Text Include="..\input\task1_case1.txt">
       <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>

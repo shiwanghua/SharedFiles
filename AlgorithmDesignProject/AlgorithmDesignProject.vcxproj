@@ -142,13 +142,15 @@
   <ItemGroup>
     <ClCompile Include="..\cppFiles\main.cpp" />
     <ClCompile Include="..\cppFiles\OfflineJobScheduler.cpp" />
+    <ClCompile Include="..\cppFiles\Util.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\hFiles\OfflineJobScheduler.h" />
+    <ClInclude Include="..\hFiles\Util.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="..\input\case1.txt" />
-    <Text Include="..\input\case2.txt" />
+    <Text Include="..\input\task1_case1.txt" />
+    <Text Include="..\input\task2_case1.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.gitignore" />
