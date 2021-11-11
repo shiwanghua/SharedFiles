@@ -19,7 +19,7 @@
 
 * 任何其他样例与Project原文不同之处，都可以按Project里的来
 * cppFiles/Util.cpp 里实现了一个随机用例生成器，可以根据参数范围给一个 OfflineJobScheduler 赋值
-* 项目里保留了一些 Visual Studio 2022 相关的文件，是为了可以通过 .sln 文件打开项目直接运行，如果你的VS版本不对，可以在项目设置里换成旧的SDK版本，如果还是不能运行，可以新建一个项目 (其他IDE也行) 然后把代码文件夹(hFiles, cppFiles, input)直接添加进去
+* 项目里保留了一些 Visual Studio 2022 相关的文件（有点大），是为了可以通过 .sln 文件打开项目直接运行，如果你的VS版本不对，可以在项目设置里换成旧的SDK版本，如果还是不能运行，可以新建一个项目 (其他IDE也行) 然后把代码文件夹(hFiles, cppFiles, input)直接添加进去
 
 #### 提示
 
