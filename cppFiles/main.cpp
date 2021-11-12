@@ -3,8 +3,10 @@
 #include "../hFiles/Util.h"
 
 int main() {
-	ResourceScheduler rs(1);
-	generator(rs,1);
+	int taskType=1;
+	int caseID=1;
+	ResourceScheduler rs(taskType,caseID);
+	generator(rs,taskType);
 	rs.schedule();
 	/*rs.outputSolutionFromBlock();
 	rs.outputSolutionFromCore();*/

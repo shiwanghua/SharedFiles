@@ -1,8 +1,8 @@
 #include "../hFiles/ResourceScheduler.h"
 
-ResourceScheduler::ResourceScheduler(int tasktype) {
+ResourceScheduler::ResourceScheduler(int tasktype,int caseID) {
 	taskType = tasktype;
-	string filePath = "../input/task" + to_string(taskType) + "_case1.txt";
+	string filePath = "../input/task" + to_string(taskType) + "_case"+to_string(caseID)+".txt";
 	freopen(filePath.c_str(), "r", stdin);
 	cin >> numJob >> numHost >> alpha;
 	if (taskType == 2)

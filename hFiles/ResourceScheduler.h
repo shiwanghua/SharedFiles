@@ -12,6 +12,7 @@ using namespace std;
 class ResourceScheduler {
 public:
 	int taskType; // 1 or 2
+	int caseID;   // 1
 	int numJob; // No. 0 ~ numJob-1
 	int numHost;// No. 0 ~ numHost-1
 	double St;  // Speed of Transimision 
@@ -28,7 +29,7 @@ public:
 	vector<vector<vector<tuple<int, int, double, double>>>> hostCoreTask; // Core perspective: host->core->task-> <job,block,startTime,endTime>
 	vector<vector<double>> hostCoreFinishTime; // host->core->finishTime
 
-	ResourceScheduler(int);
+	ResourceScheduler(int,int);
 	void schedule();
 	void outputSolutionFromBlock();
 	void outputSolutionFromCore();
