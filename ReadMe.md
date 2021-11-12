@@ -1,3 +1,6 @@
+### Introduction
+This program aims at achieving an resource scheduler to solve the resource scheduling problem in Hadoop. 
+
 ## Note
 
 1. g(n)的n指单个job的数据块分布在n个核上运行，不同主机之间执行相同Job的核会相互干扰，同一台主机之间不同任务的核不会相互干扰
