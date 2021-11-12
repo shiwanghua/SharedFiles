@@ -7,3 +7,9 @@ AlgorithmDesignProject/
 Debug/
 .idea/
 AlgorithmDesignProject.sln
+CMakeFiles/
+run
+*.cmake
+CMakeCache.txt
+Makefile
+cppFiles/run

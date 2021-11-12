@@ -18,6 +18,13 @@ This program aims at achieving an resource scheduler to solve the resource sched
 5. 每个Job的每个数据块的大小（一行对应一个Job）
 6. 每个Job的每个数据块的初始位置（一行对应一个Job）
 
+### cmake运行命令(可选)
+``` bash
+sudo cmake .
+make
+./cppFiles/run
+```
+
 #### 注：
 
 * 任何本项目中与Project原文不同之处，都可以按Project里的来
