@@ -1,7 +1,7 @@
 #include"../hFiles/Util.h"
 
-// 随机生成器
-// 测试的时候可以随便在这里输入一些数, 就可以生成一个新的用例
+// Random generator
+// For testing, you can modify the range of the next parameters and get a new test case.
 void generator(ResourceScheduler& rs, int taskType) {
 	srand((int)time(0));
 	rs.numJob = 15, rs.numHost = 5, rs.alpha = 0.08;
@@ -79,4 +79,20 @@ void generator(ResourceScheduler& rs, int taskType) {
 		rs.hostCoreFinishTime[i].resize(rs.hostCore[i], 0);
 
 	cout << "\n\n-----------Generator ends.--------------\n\n";
+}
+
+void WriteData(string fileName, string text) // Save $text into file $fileName
+{
+//	ifstream ifs(fileName); // 读文件
+//	if (!ifs)
+//		cout << "Create file failed!" << endl;
+//	string content((istreambuf_iterator<char>(ifs)), (istreambuf_iterator<char>())); // old file content
+//	ifs.close();
+
+	ofstream fileStream;
+	fileStream.open(fileName.c_str(), ios::binary | ios::ate); //  插入到文件末尾
+	fileStream.seekp(0, ios::beg);
+	fileStream << text << endl; // << content; // 插入到文件头部
+	fileStream << flush;
+	fileStream.close();
 }

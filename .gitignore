@@ -13,3 +13,6 @@ run
 CMakeCache.txt
 Makefile
 cppFiles/run
+cmake-build-debug/
+Testing/
+*.cbp
