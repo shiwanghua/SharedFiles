@@ -15,7 +15,7 @@ public:
 	int numJob; // No. 0 ~ numJob-1
 	int numHost;// No. 0 ~ numHost-1
 	double St;  // Speed of Transimision 
-	double alpha;   // G(e)=1-alpha(e-1) alpha>0, e is the number of cores allocated to a single job
+	double alpha;   // g(e)=1-alpha(e-1) alpha>0, e is the number of cores allocated to a single job
 	vector<int> hostCore;              // The number of cores for each host
 	vector<int> jobBlock;              // The number of blocks for each job
 	vector<double> Sc;                    // Speed of calculation for each job
