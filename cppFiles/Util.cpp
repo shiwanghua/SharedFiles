@@ -4,12 +4,12 @@
 // 测试的时候可以随便在这里输入一些数, 就可以生成一个新的用例
 void generator(ResourceScheduler& rs, int taskType) {
 	srand((int)time(0));
-	rs.numJob = 20, rs.numHost = 1, rs.alpha = 0.06;
+	rs.numJob = 15, rs.numHost = 5, rs.alpha = 0.08;
 	if (taskType == 2)rs.St = 500;
-	int minCore = 20, maxCore = 20;
-	int minBlock = 200, maxBlock = 1000;
-	int minSize = 50, maxSize = 150;
-	double minSpeed = 10, maxSpeed = 100;
+	int minCore = 3, maxCore = 20;
+	int minBlock = 20, maxBlock = 80;
+	int minSize = 50, maxSize = 200;
+	double minSpeed = 20, maxSpeed = 80;
 	rs.hostCore.resize(rs.numHost);
 	rs.jobBlock.resize(rs.numJob);
 	rs.Sc.resize(rs.numJob);
@@ -18,7 +18,9 @@ void generator(ResourceScheduler& rs, int taskType) {
 
 	cout << "\n\n-----------Generator starts.--------------\n\n";
 
-	cout << "numJob = " << rs.numJob << ", numHost = " << rs.numHost << ", St = " << rs.St << ", alpha = " << rs.alpha << "\n\n";
+	cout << "numJob = " << rs.numJob << ", numHost = " << rs.numHost << ", alpha = " << rs.alpha;
+	if (taskType == 2) cout << ", St = " << rs.St;
+	cout<< "\n\n";
 
 	cout << "hostCore:\n";
 	for (int i = 0; i < rs.numHost; i++) {
@@ -61,7 +63,7 @@ void generator(ResourceScheduler& rs, int taskType) {
 		cout << endl;
 	}
 
-	rs.finishTime.resize(rs.numJob, 0);
+	rs.jobFinishTime.resize(rs.numJob, 0);
 	rs.jobCore.resize(rs.numJob);
 
 	rs.runLoc.resize(rs.numJob);

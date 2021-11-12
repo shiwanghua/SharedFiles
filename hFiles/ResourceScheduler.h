@@ -22,11 +22,11 @@ public:
 	vector<vector<double>> dataSize;      // Job-> block number-> block size
 	vector<vector<int>> location;         // Job-> block number-> block location (host number)
 
-	vector<double> finishTime;                 // The finish time of each job 
+	vector<double> jobFinishTime;                 // The finish time of each job 
 	vector<int> jobCore;                       // The number of cores allocated to each job.
 	vector<vector<tuple<int, int, int>>> runLoc; // Block perspective: job number->block number->(hostID, coreID,rank), rank=1 means that block is the first task running on that core of that host
-	vector<vector<vector<tuple<int, int, int, int>>>> hostCoreTask; // Core perspective: host->core->task-> <job,block,startTime,endTime>
-	vector<vector<int>> hostCoreFinishTime; // host->core->finishTime
+	vector<vector<vector<tuple<int, int, double, double>>>> hostCoreTask; // Core perspective: host->core->task-> <job,block,startTime,endTime>
+	vector<vector<double>> hostCoreFinishTime; // host->core->finishTime
 	ResourceScheduler(int);
 	void schedule();
 	void outputSolutionFromBlock();

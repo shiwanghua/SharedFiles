@@ -19,6 +19,7 @@
 
 * 任何本项目中与Project原文不同之处，都可以按Project里的来
 * cppFiles/Util.cpp 里实现了一个随机用例生成器，可以根据参数范围给一个 ResourceScheduler 赋值
+* 建议使用ISO C++20标准，主要是有关tuple的使用会不同
 
 #### 提 示 （不一定对）
 
