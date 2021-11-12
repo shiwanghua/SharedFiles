@@ -1,12 +1,13 @@
 #include<iostream>
-#include "../hFiles/OfflineJobScheduler.h"
+#include "../hFiles/ResourceScheduler.h"
 #include "../hFiles/Util.h"
 
 int main() {
-	OfflineJobScheduler ojs;
-	generator(ojs);
-	ojs.schedule();
-	ojs.outputSolution();
+	ResourceScheduler rs(1);
+	//generator(rs,1);
+	rs.schedule();
+	rs.outputSolutionFromBlock();
+	rs.outputSolutionFromCore();
 
 	return 0;
 }
