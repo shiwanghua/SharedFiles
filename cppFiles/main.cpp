@@ -8,8 +8,8 @@ int main() {
 	ResourceScheduler rs(taskType,caseID);
 	generator(rs,taskType);
 	rs.schedule();
-	/*rs.outputSolutionFromBlock();
-	rs.outputSolutionFromCore();*/
+	rs.outputSolutionFromBlock();
+	rs.outputSolutionFromCore();
 
 	return 0;
 }

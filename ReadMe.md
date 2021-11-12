@@ -22,7 +22,8 @@ This program aims at achieving an resource scheduler to solve the resource sched
 ``` bash
 sudo cmake .
 make
-./cppFiles/run
+cd cppFiles
+./run
 ```
 
 #### 注：
