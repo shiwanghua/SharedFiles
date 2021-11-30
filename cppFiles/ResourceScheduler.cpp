@@ -127,5 +127,5 @@ void ResourceScheduler::visualization() {
 }
 
 double ResourceScheduler::g(int e) {
-	return 1 - alpha * (1 - e);
+	return 1 - alpha * (e - 1);
 }
