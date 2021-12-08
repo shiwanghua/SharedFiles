@@ -1,8 +1,8 @@
 #include "../hFiles/ResourceScheduler.h"
 
-ResourceScheduler::ResourceScheduler(int tasktype,int caseID) {
+ResourceScheduler::ResourceScheduler(int tasktype, int caseID) {
 	taskType = tasktype;
-	string filePath = "../input/task" + to_string(taskType) + "_case"+to_string(caseID)+".txt";
+	string filePath = "../input/task" + to_string(taskType) + "_case" + to_string(caseID) + ".txt";
 	freopen(filePath.c_str(), "r", stdin);
 	cin >> numJob >> numHost >> alpha;
 	if (taskType == 2)
@@ -86,9 +86,9 @@ void ResourceScheduler::schedule() {
 }
 
 void ResourceScheduler::outputSolutionFromBlock() {
-	cout << "\nTask2 Solution (Block Perspective) of Teaching Assistant:\n\n";
+	cout << "\nTask" << taskType << " Solution (Block Perspective) of Teaching Assistant:\n\n";
 	for (int i = 0; i < numJob; i++) {
-		double speed = g(jobCore[i]);
+		double speed = g(jobCore[i]) * Sc[i];
 		cout << "Job" << i << " obtains " << jobCore[i] << " cores (speed=" << speed << ") and finishes at time " << jobFinishTime[i] << ": \n";
 		for (int j = 0; j < jobBlock[i]; j++) {
 			cout << "\tBlock" << j << ": H" << get<0>(runLoc[i][j]) << ", C" << get<1>(runLoc[i][j]) << ", R" << get<2>(runLoc[i][j]) << " (time=" << fixed << setprecision(2) << dataSize[i][j] / speed << ")" << " \n";
@@ -101,7 +101,7 @@ void ResourceScheduler::outputSolutionFromBlock() {
 }
 
 void ResourceScheduler::outputSolutionFromCore() {
-	cout << "\nTask2 Solution (Core Perspective) of Teaching Assistant:\n\n";
+	cout << "\nTask" << taskType << " Solution (Core Perspective) of Teaching Assistant:\n\n";
 	double maxHostTime = 0, totalRunningTime = 0.0;
 	for (int i = 0; i < numHost; i++) {
 		double hostTime = *max_element(hostCoreFinishTime[i].begin(), hostCoreFinishTime[i].end());
