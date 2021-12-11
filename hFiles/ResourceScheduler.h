@@ -6,7 +6,16 @@
 #include<numeric>
 #include<ctime>
 #include<set>
+#include<unordered_set>
+#include<unordered_map>
 #include <sstream>
+#include <assert.h>
+
+#define _for(i,a,b) for( int i=(a); i<(b); ++i)
+#define __for(i,a,b) for( int i=(a); i<=(b); ++i)
+#define mfor(i,a,b) for(int i=(a);i>(b);--i)
+#define mmfor(i,a,b) for(int i=(a);i>=(b);--i)
+
 using namespace std;
 
 class ResourceScheduler {
@@ -26,13 +35,17 @@ public:
 	vector<double> jobFinishTime;                 // The finish time of each job 
 	vector<int> jobCore;                       // The number of cores allocated to each job.
 	vector<vector<tuple<int, int, int>>> runLoc; // Block perspective: job number->block number->(hostID, coreID,rank), rank=1 means that block is the first task running on that core of that host
-	vector<vector<vector<tuple<int, int, double, double>>>> hostCoreTask; // Core perspective: host->core->task-> <job,block,startTime,endTime>
+
+	vector<vector<vector<tuple<int, int, double, double>>>> hostCoreTask; // Core perspective: host->core->task-> <job,block,startRunningTime,endRunningTime>
 	vector<vector<double>> hostCoreFinishTime; // host->core->finishTime
+	unordered_map<pair<int, int>, tuple<int, int, double>> transferMap; // Transmission situation: (job, block) --> (initHost, destinationHost, propagation time)
 
 	ResourceScheduler(int,int);
 	void schedule();
 	void outputSolutionFromBlock();
 	void outputSolutionFromCore();
-	void visualization(); // An optional fuction.
+	void validFromBlock();
+	void validFromCore();
+	void visualization(); // An optional function.
 	double g(int);
 };
