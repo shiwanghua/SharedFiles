@@ -38,9 +38,9 @@ public:
 
 	vector<vector<vector<tuple<int, int, double, double>>>> hostCoreTask; // Core perspective: host->core->task-> <job,block,startRunningTime,endRunningTime>
 	vector<vector<double>> hostCoreFinishTime; // host->core->finishTime
-	unordered_map<pair<int, int>, tuple<int, int, double>> transferMap; // Transmission situation: (job, block) --> (initHost, destinationHost, propagation time)
+	unordered_map<int, unordered_map<int, tuple<int, int, double>>> transferMap; // Transmission situation: (job, block) --> (initHost, destinationHost, propagation time)
 
-	ResourceScheduler(int,int);
+	ResourceScheduler(int, int);
 	void schedule();
 	void outputSolutionFromBlock();
 	void outputSolutionFromCore();

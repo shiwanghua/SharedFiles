@@ -2,14 +2,14 @@
 
 // Random generator
 // For testing, you can modify the range of the next parameters and get a new test case.
-void generator(ResourceScheduler& rs, int taskType) {
+void generator(ResourceScheduler& rs, int taskType,int caseID) {
 	srand((int)time(0));
-	rs.numJob = 15, rs.numHost = 5, rs.alpha = 0.08;
-	if (taskType == 2)rs.St = 500;
-	int minCore = 3, maxCore = 20;
-	int minBlock = 20, maxBlock = 80;
-	int minSize = 50, maxSize = 200;
-	double minSpeed = 20, maxSpeed = 80;
+	rs.numJob = 15, rs.numHost = 5, rs.alpha = 0.075;
+	if (taskType == 2) rs.St = 400;
+	int minCore = 4, maxCore = 12;      // The number of cores in a host.
+	int minBlock = 20, maxBlock = 80;   // The number of blocks in a job.
+	int minSize = 10, maxSize = 100;     // The size of a block in a job.
+	double minSpeed = 5, maxSpeed = 40;  // Calculating speed.
 	rs.hostCore.resize(rs.numHost);
 	rs.jobBlock.resize(rs.numJob);
 	rs.Sc.resize(rs.numJob);
@@ -78,6 +78,38 @@ void generator(ResourceScheduler& rs, int taskType) {
 	for (int i = 0; i < rs.numHost; i++)
 		rs.hostCoreFinishTime[i].resize(rs.hostCore[i], 0);
 
+	string fileName = "../input/task" + to_string(taskType) + "_case" + to_string(caseID) + ".txt";
+	string text = to_string(rs.numJob)+" "+to_string(rs.numHost)+" "+to_string(rs.alpha);
+	if (rs.taskType == 2)text += " " + to_string(rs.St);
+	text += "\n";
+	
+	for (int i = 0; i < rs.numHost; i++) 
+		text += to_string(rs.hostCore[i]) + " ";
+	text += "\n";
+	
+	for (int i = 0; i < rs.numJob; i++) 
+		text += to_string(rs.jobBlock[i]) + " ";
+	text += "\n";
+	
+	for (int i = 0; i < rs.numJob; i++)
+		text += to_string(rs.Sc[i]) + " ";
+    text += "\n";
+	
+	for (int i = 0; i < rs.numJob; i++)
+	{
+		for (int j = 0; j < rs.jobBlock[i]; j++) 
+			text += to_string(rs.dataSize[i][j]) + " ";
+		text += "\n";
+	}
+
+	for (int i = 0; i < rs.numJob; i++)
+	{
+		for (int j = 0; j < rs.jobBlock[i]; j++)
+			text += to_string(rs.location[i][j]) + " ";
+		text += "\n";
+	}
+	WriteData(fileName, text);
+
 	cout << "\n\n-----------Generator ends.--------------\n\n";
 }
 
@@ -92,7 +124,7 @@ void WriteData(string fileName, string text) // Save $text into file $fileName
 	ofstream fileStream;
 	fileStream.open(fileName.c_str(), ios::binary | ios::ate); //  插入到文件末尾
 	fileStream.seekp(0, ios::beg);
-	fileStream << text << endl; // << content; // 插入到文件头部
+	fileStream << text << endl; // << content; // 插入到文件头部(保留原文件内容)
 	fileStream << flush;
 	fileStream.close();
 }

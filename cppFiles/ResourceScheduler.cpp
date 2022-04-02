@@ -7,6 +7,7 @@ ResourceScheduler::ResourceScheduler(int tasktype, int caseID) {
 	cin >> numJob >> numHost >> alpha;
 	if (taskType == 2)
 		cin >> St;
+
 	hostCore.resize(numHost);
 	for (int i = 0; i < numHost; i++)
 		cin >> hostCore[i];
@@ -50,25 +51,35 @@ ResourceScheduler::ResourceScheduler(int tasktype, int caseID) {
 }
 
 void ResourceScheduler::schedule() {
+	// 以下代码是为了测试，不是合理方案
 
 	vector<vector<int>> hostCoreBlock(numHost);
 	for (int i = 0; i < numHost; i++)
 		hostCoreBlock[i].resize(hostCore[i], 0);
 
+	int hid, cid; // hostId, coreId
 	for (int i = 0; i < numJob; i++) {
 		set<pair<int, int>> allocatedJobCore;
+		double jobDataSize = 0.0;
 		for (int j = 0; j < jobBlock[i]; j++) {
-			int hid = rand() % numHost;
-			int cid = rand() % hostCore[hid];
-			allocatedJobCore.insert({ hid,cid });
-			runLoc[i][j] = make_tuple(hid, cid, ++hostCoreBlock[hid][cid]);// rank 从1开始
+			jobDataSize += dataSize[i][j];
+			if (g(allocatedJobCore.size() + 1) < 0) { // 再加新核导致速度为负
+				set<pair<int,int>>::const_iterator position(allocatedJobCore.begin());
+				advance(position, rand() % allocatedJobCore.size()); // 随机取一个已分配核计算当前数据块
+				hid = position->first;
+				cid = position->second;
+			}
+			else {
+				hid = rand() % numHost;
+				cid = rand() % hostCore[hid];
+				allocatedJobCore.insert({ hid,cid });
+			}
+			runLoc[i][j] = make_tuple(hid, cid, ++hostCoreBlock[hid][cid]); // rank 从1开始
 		}
-		/*for (int j = 0; j < jobBlock[i]; j++)
-			finishTime[i]+=*/
-		jobFinishTime[i] = rand() % 20;
+
+		jobFinishTime[i] = jobDataSize / (Sc[i] * g(allocatedJobCore.size()));
 		jobCore[i] = allocatedJobCore.size();
 	}
-
 
 	for (int i = 0; i < numHost; i++) {
 		for (int j = 0; j < hostCore[i]; j++) {
@@ -85,6 +96,7 @@ void ResourceScheduler::schedule() {
 	}
 }
 
+// 以数据块的视角打印解决方案
 void ResourceScheduler::outputSolutionFromBlock() {
 	cout << "\nTask" << taskType << " Solution (Block Perspective) of Teaching Assistant:\n\n";
 	for (int i = 0; i < numJob; i++) {
@@ -97,9 +109,10 @@ void ResourceScheduler::outputSolutionFromBlock() {
 	}
 
 	cout << "The maximum finish time: " << *max_element(jobFinishTime.begin(), jobFinishTime.end()) << "\n";
-	cout << "The total response time: " << accumulate(jobFinishTime.begin(), jobFinishTime.end(), 0.0) << "\n\n";
+	cout << "The sum of response time: " << accumulate(jobFinishTime.begin(), jobFinishTime.end(), 0.0) << "\n\n";
 }
 
+// 以核的视角打印解决方案
 void ResourceScheduler::outputSolutionFromCore() {
 	cout << "\nTask" << taskType << " Solution (Core Perspective) of Teaching Assistant:\n\n";
 	double maxHostTime = 0, totalRunningTime = 0.0;
@@ -122,6 +135,7 @@ void ResourceScheduler::outputSolutionFromCore() {
 	cout << "Utilization rate: " << totalRunningTime / accumulate(hostCore.begin(), hostCore.end(), 0.0) / maxHostTime << "\n\n";
 }
 
+// 从数据块的视角进行验证
 void ResourceScheduler::validFromBlock() {
 
 	// 1. 验证jobFinishTime: "jobFinishTime的和" 应该小于 "依次执行每个job, 所有数据块在各自初始所在主机的同一个核上直接运行的时间的和"
@@ -145,7 +159,7 @@ void ResourceScheduler::validFromBlock() {
 
 	// 3. 验证runLoc: 每个核内的数据块运行次序不能相同, 必须是[1,...,n]的一个全排列, n是这个核上被调度的数据块个数
 	//    顺便把从块视角的答案转化为从核视角的答案
-	
+
 	// 计算每个核被分配了多少数据块
 	vector<vector<int>> hostCoreBlock(numHost);
 	_for(i, 0, numHost)
@@ -176,8 +190,8 @@ void ResourceScheduler::validFromBlock() {
 			if (h < 0 || h >= numHost || c<0 || c >= hostCore[h] || r <= 0 || r>hostCoreBlock[h][c])
 				cerr << "Error: Host " << h << " core " << c << " rank " << r << " should not be allocated by job " << i << " block " << j << "\n";
 			else if (get<0>(hostCoreTask[h][c][r - 1]) != -1) // 注意 r 需要减一
-				cerr << "Error: Host " << h << " core " << c << " rank " << r << " is already allocated by job " << get<0>(hostCoreTask[h][c][r-1]) 
-				<< " block " << get<1>(hostCoreTask[h][c][r-1]) << ": " << get<2>(hostCoreTask[h][c][r-1]) << " ~ " << get<3>(hostCoreTask[h][c][r-1]) 
+				cerr << "Error: Host " << h << " core " << c << " rank " << r << " is already allocated by job " << get<0>(hostCoreTask[h][c][r - 1])
+				<< " block " << get<1>(hostCoreTask[h][c][r - 1]) << ": " << get<2>(hostCoreTask[h][c][r - 1]) << " ~ " << get<3>(hostCoreTask[h][c][r - 1])
 				<< " when allocate job " << i << " block " << j << "\n";
 
 			hostCoreTask[h][c][r - 1] = make_tuple(i, j, -1.0, -1.0);
@@ -185,7 +199,7 @@ void ResourceScheduler::validFromBlock() {
 	}
 
 	// 计算主机-核上的运行情况, 可以把传输列表transferList也算出来
-	
+
 	// 初始化hostCoreFinishTime, 逐步模拟核当前运行到了哪个时间
 	hostCoreFinishTime.resize(numHost);
 	for (int i = 0; i < numHost; i++)
@@ -195,7 +209,7 @@ void ResourceScheduler::validFromBlock() {
 	int numTotalBlock = accumulate(jobBlock.begin(), jobBlock.end(), 0);
 	vector<double> jobStartTime(numJob, 0.0); // 记录每个Job的开始时
 
-	while (blockFinished<numTotalBlock) {
+	while (blockFinished < numTotalBlock) {
 		// 1. 找最短运行时间的核, 尝试调度这个核上的下一个块对应的Job的所有数据块
 		//    判断并记录需要传输的块到transferMap中
 
