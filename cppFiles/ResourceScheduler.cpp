@@ -138,7 +138,7 @@ void ResourceScheduler::outputSolutionFromCore() {
 // 从数据块的视角进行验证
 void ResourceScheduler::validFromBlock() {
 
-	// 1. 验证jobFinishTime: "jobFinishTime的和" 应该小于 "依次执行每个job, 所有数据块在各自初始所在主机的同一个核上直接运行的时间的和"
+	// 1. 验证jobFinishTime: "jobFinishTime的和" 应该小于 "依次执行每个job, 所有数据块在各自初始所在主机的同一个核上直接运行情况下, job完成时间的和"
 	double actualTime = accumulate(jobFinishTime.begin(), jobFinishTime.end(), 0.0);
 	double maxRunningTime = 0.0;
 	vector<unordered_set<int>> jobInitLocSet(numJob); // 每个job初始分散在哪几个主机上
@@ -148,7 +148,7 @@ void ResourceScheduler::validFromBlock() {
 			jobInitLocSet[i].insert(location[i][j]);
 			jobTotalSize[i] += dataSize[i][j];
 		}
-		maxRunningTime += (double)jobTotalSize[i] / (Sc[i]) / g(jobInitLocSet[i].size());
+		maxRunningTime += maxRunningTime + (double)jobTotalSize[i] / (Sc[i]) / g(jobInitLocSet[i].size());
 	}
 	assert(maxRunningTime >= actualTime);
 
