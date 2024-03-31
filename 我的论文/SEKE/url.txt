@@ -1,3 +1,7 @@
+《BOP: A Bitset-based Optimization Paradigm for Content-based Event Matching Algorithms》
+
+https://dblp.org/rec/conf/seke/LiangSLQZ0X23.html
+
 https://ksiresearch.org/seke/seke23pgm.html
 
 https://ksiresearch.org/seke/seke23paper/paper142.pdf
